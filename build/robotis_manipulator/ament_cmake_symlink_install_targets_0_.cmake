@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/x/Desktop/workspace/omx_tester/build/robotis_manipulator/librobotis_manipulator.so" "TARGETS" "robotis_manipulator" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin/robotis_manipulator")

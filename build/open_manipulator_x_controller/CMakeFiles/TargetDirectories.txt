@@ -1,0 +1,10 @@
+/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_controller/CMakeFiles/uninstall.dir
+/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_controller/CMakeFiles/open_manipulator_x_controller_uninstall.dir
+/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_controller/CMakeFiles/open_manipulator_x_controller.dir
+/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_controller/CMakeFiles/test.dir
+/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_controller/CMakeFiles/edit_cache.dir
+/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_controller/CMakeFiles/rebuild_cache.dir
+/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_controller/CMakeFiles/list_install_components.dir
+/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_controller/CMakeFiles/install.dir
+/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_controller/CMakeFiles/install/local.dir
+/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_controller/CMakeFiles/install/strip.dir

@@ -1,0 +1,74 @@
+[0.007s] Invoking command in '/home/x/Desktop/workspace/omx_tester/build/dynamixel_workbench_toolbox': AMENT_PREFIX_PATH=/home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk:/home/x/omx_ws/install/open_manipulator_x_applications:/home/x/omx_ws/install/open_manipulator_x_master_slave:/home/x/omx_ws/install/open_manipulator:/home/x/omx_ws/install/open_manipulator_x_controller:/home/x/omx_ws/install/open_manipulator_x_libs:/home/x/omx_ws/install/robotis_manipulator:/home/x/omx_ws/install/open_manipulator_x_description:/home/x/omx_ws/install/open_manipulator_msgs:/home/x/omx_ws/install/dynamixel_workbench:/home/x/omx_ws/install/dynamixel_workbench_toolbox:/home/x/omx_ws/install/dynamixel_sdk_examples:/home/x/omx_ws/install/dynamixel_sdk_custom_interfaces:/home/x/omx_ws/install/dynamixel_sdk:/home/x/omx_ws/install/cmake_modules:/home/x/omx_ws/install/open_manipulator_x_teleop:/opt/ros/humble LD_LIBRARY_PATH=/home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/x/Desktop/workspace/omx_tester/src/dynamixel-workbench/dynamixel_workbench_toolbox -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox
+[0.042s] -- The C compiler identification is GNU 11.4.0
+[0.079s] -- The CXX compiler identification is GNU 11.4.0
+[0.086s] -- Detecting C compiler ABI info
+[0.133s] -- Detecting C compiler ABI info - done
+[0.138s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.138s] -- Detecting C compile features
+[0.138s] -- Detecting C compile features - done
+[0.140s] -- Detecting CXX compiler ABI info
+[0.192s] -- Detecting CXX compiler ABI info - done
+[0.202s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.202s] -- Detecting CXX compile features
+[0.203s] -- Detecting CXX compile features - done
+[0.205s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.319s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.386s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.407s] -- Found dynamixel_sdk: 3.7.60 (/home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/share/dynamixel_sdk/cmake)
+[0.411s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.460s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.466s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.475s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.486s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.505s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.575s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.579s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.714s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.746s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.798s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.806s] -- Looking for pthread.h
+[0.856s] -- Looking for pthread.h - found
+[0.856s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.917s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.918s] -- Found Threads: TRUE  
+[1.175s] -- Configuring done
+[1.185s] -- Generating done
+[1.188s] -- Build files have been written to: /home/x/Desktop/workspace/omx_tester/build/dynamixel_workbench_toolbox
+[1.203s] Invoked command in '/home/x/Desktop/workspace/omx_tester/build/dynamixel_workbench_toolbox' returned '0': AMENT_PREFIX_PATH=/home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk:/home/x/omx_ws/install/open_manipulator_x_applications:/home/x/omx_ws/install/open_manipulator_x_master_slave:/home/x/omx_ws/install/open_manipulator:/home/x/omx_ws/install/open_manipulator_x_controller:/home/x/omx_ws/install/open_manipulator_x_libs:/home/x/omx_ws/install/robotis_manipulator:/home/x/omx_ws/install/open_manipulator_x_description:/home/x/omx_ws/install/open_manipulator_msgs:/home/x/omx_ws/install/dynamixel_workbench:/home/x/omx_ws/install/dynamixel_workbench_toolbox:/home/x/omx_ws/install/dynamixel_sdk_examples:/home/x/omx_ws/install/dynamixel_sdk_custom_interfaces:/home/x/omx_ws/install/dynamixel_sdk:/home/x/omx_ws/install/cmake_modules:/home/x/omx_ws/install/open_manipulator_x_teleop:/opt/ros/humble LD_LIBRARY_PATH=/home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/x/Desktop/workspace/omx_tester/src/dynamixel-workbench/dynamixel_workbench_toolbox -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox
+[1.205s] Invoking command in '/home/x/Desktop/workspace/omx_tester/build/dynamixel_workbench_toolbox': AMENT_PREFIX_PATH=/home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk:/home/x/omx_ws/install/open_manipulator_x_applications:/home/x/omx_ws/install/open_manipulator_x_master_slave:/home/x/omx_ws/install/open_manipulator:/home/x/omx_ws/install/open_manipulator_x_controller:/home/x/omx_ws/install/open_manipulator_x_libs:/home/x/omx_ws/install/robotis_manipulator:/home/x/omx_ws/install/open_manipulator_x_description:/home/x/omx_ws/install/open_manipulator_msgs:/home/x/omx_ws/install/dynamixel_workbench:/home/x/omx_ws/install/dynamixel_workbench_toolbox:/home/x/omx_ws/install/dynamixel_sdk_examples:/home/x/omx_ws/install/dynamixel_sdk_custom_interfaces:/home/x/omx_ws/install/dynamixel_sdk:/home/x/omx_ws/install/cmake_modules:/home/x/omx_ws/install/open_manipulator_x_teleop:/opt/ros/humble LD_LIBRARY_PATH=/home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/x/Desktop/workspace/omx_tester/build/dynamixel_workbench_toolbox -- -j20 -l20
+[1.265s] [ 20%] [32mBuilding CXX object CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_item.cpp.o[0m
+[1.267s] [ 40%] [32mBuilding CXX object CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_tool.cpp.o[0m
+[1.267s] [ 60%] [32mBuilding CXX object CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_driver.cpp.o[0m
+[1.268s] [ 80%] [32mBuilding CXX object CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_workbench.cpp.o[0m
+[1.730s] [100%] [32m[1mLinking CXX shared library libdynamixel_workbench_toolbox.so[0m
+[1.928s] [100%] Built target dynamixel_workbench_toolbox
+[1.956s] Invoked command in '/home/x/Desktop/workspace/omx_tester/build/dynamixel_workbench_toolbox' returned '0': AMENT_PREFIX_PATH=/home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk:/home/x/omx_ws/install/open_manipulator_x_applications:/home/x/omx_ws/install/open_manipulator_x_master_slave:/home/x/omx_ws/install/open_manipulator:/home/x/omx_ws/install/open_manipulator_x_controller:/home/x/omx_ws/install/open_manipulator_x_libs:/home/x/omx_ws/install/robotis_manipulator:/home/x/omx_ws/install/open_manipulator_x_description:/home/x/omx_ws/install/open_manipulator_msgs:/home/x/omx_ws/install/dynamixel_workbench:/home/x/omx_ws/install/dynamixel_workbench_toolbox:/home/x/omx_ws/install/dynamixel_sdk_examples:/home/x/omx_ws/install/dynamixel_sdk_custom_interfaces:/home/x/omx_ws/install/dynamixel_sdk:/home/x/omx_ws/install/cmake_modules:/home/x/omx_ws/install/open_manipulator_x_teleop:/opt/ros/humble LD_LIBRARY_PATH=/home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/x/Desktop/workspace/omx_tester/build/dynamixel_workbench_toolbox -- -j20 -l20
+[2.199s] Invoking command in '/home/x/Desktop/workspace/omx_tester/build/dynamixel_workbench_toolbox': AMENT_PREFIX_PATH=/home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk:/home/x/omx_ws/install/open_manipulator_x_applications:/home/x/omx_ws/install/open_manipulator_x_master_slave:/home/x/omx_ws/install/open_manipulator:/home/x/omx_ws/install/open_manipulator_x_controller:/home/x/omx_ws/install/open_manipulator_x_libs:/home/x/omx_ws/install/robotis_manipulator:/home/x/omx_ws/install/open_manipulator_x_description:/home/x/omx_ws/install/open_manipulator_msgs:/home/x/omx_ws/install/dynamixel_workbench:/home/x/omx_ws/install/dynamixel_workbench_toolbox:/home/x/omx_ws/install/dynamixel_sdk_examples:/home/x/omx_ws/install/dynamixel_sdk_custom_interfaces:/home/x/omx_ws/install/dynamixel_sdk:/home/x/omx_ws/install/cmake_modules:/home/x/omx_ws/install/open_manipulator_x_teleop:/opt/ros/humble LD_LIBRARY_PATH=/home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/x/Desktop/workspace/omx_tester/build/dynamixel_workbench_toolbox
+[2.207s] -- Install configuration: ""
+[2.208s] -- Execute custom install script
+[2.208s] -- Symlinking: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/lib/libdynamixel_workbench_toolbox.so
+[2.222s] -- Symlinking: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/include//dynamixel_workbench_toolbox/dynamixel_driver.h
+[2.250s] -- Symlinking: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/include//dynamixel_workbench_toolbox/dynamixel_item.h
+[2.260s] -- Symlinking: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/include//dynamixel_workbench_toolbox/dynamixel_tool.h
+[2.293s] -- Symlinking: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/include//dynamixel_workbench_toolbox/dynamixel_workbench.h
+[2.312s] -- Symlinking: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/environment/library_path.sh
+[2.341s] -- Symlinking: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/environment/library_path.dsv
+[2.380s] -- Symlinking: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/share/ament_index/resource_index/package_run_dependencies/dynamixel_workbench_toolbox
+[2.417s] -- Symlinking: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/share/ament_index/resource_index/parent_prefix_path/dynamixel_workbench_toolbox
+[2.444s] -- Symlinking: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/environment/ament_prefix_path.sh
+[2.476s] -- Symlinking: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/environment/ament_prefix_path.dsv
+[2.512s] -- Symlinking: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/environment/path.sh
+[2.534s] -- Symlinking: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/environment/path.dsv
+[2.558s] -- Symlinking: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/local_setup.bash
+[2.569s] -- Symlinking: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/local_setup.sh
+[2.580s] -- Symlinking: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/local_setup.zsh
+[2.592s] -- Symlinking: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/local_setup.dsv
+[2.603s] -- Symlinking: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.dsv
+[2.613s] -- Symlinking: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/share/ament_index/resource_index/packages/dynamixel_workbench_toolbox
+[2.630s] -- Symlinking: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.643s] -- Symlinking: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.665s] -- Symlinking: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/cmake/ament_cmake_export_libraries-extras.cmake
+[2.687s] -- Symlinking: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/cmake/dynamixel_workbench_toolboxConfig.cmake
+[2.698s] -- Symlinking: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/cmake/dynamixel_workbench_toolboxConfig-version.cmake
+[2.719s] -- Symlinking: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.xml
+[2.732s] Invoked command in '/home/x/Desktop/workspace/omx_tester/build/dynamixel_workbench_toolbox' returned '0': AMENT_PREFIX_PATH=/home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk:/home/x/omx_ws/install/open_manipulator_x_applications:/home/x/omx_ws/install/open_manipulator_x_master_slave:/home/x/omx_ws/install/open_manipulator:/home/x/omx_ws/install/open_manipulator_x_controller:/home/x/omx_ws/install/open_manipulator_x_libs:/home/x/omx_ws/install/robotis_manipulator:/home/x/omx_ws/install/open_manipulator_x_description:/home/x/omx_ws/install/open_manipulator_msgs:/home/x/omx_ws/install/dynamixel_workbench:/home/x/omx_ws/install/dynamixel_workbench_toolbox:/home/x/omx_ws/install/dynamixel_sdk_examples:/home/x/omx_ws/install/dynamixel_sdk_custom_interfaces:/home/x/omx_ws/install/dynamixel_sdk:/home/x/omx_ws/install/cmake_modules:/home/x/omx_ws/install/open_manipulator_x_teleop:/opt/ros/humble LD_LIBRARY_PATH=/home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/x/Desktop/workspace/omx_tester/build/dynamixel_workbench_toolbox

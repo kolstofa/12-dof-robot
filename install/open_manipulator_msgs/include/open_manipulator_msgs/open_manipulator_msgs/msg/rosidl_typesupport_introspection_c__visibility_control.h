@@ -1,0 +1,1 @@
+/home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_typesupport_introspection_c/open_manipulator_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h

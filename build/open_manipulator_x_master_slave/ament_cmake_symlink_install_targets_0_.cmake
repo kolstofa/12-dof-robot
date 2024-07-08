@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/open_manipulator_x_master_slave" "TARGETS" "open_manipulator_x_master_slave" "DESTINATION" "lib/open_manipulator_x_master_slave")

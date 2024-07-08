@@ -1,0 +1,14 @@
+{
+  "package_name": "open_manipulator_msgs",
+  "non_idl_tuples": [
+    "/home/x/Desktop/workspace/omx_tester/src/open_manipulator_msgs:msg/JointPosition.msg",
+    "/home/x/Desktop/workspace/omx_tester/src/open_manipulator_msgs:msg/KinematicsPose.msg",
+    "/home/x/Desktop/workspace/omx_tester/src/open_manipulator_msgs:msg/OpenManipulatorState.msg",
+    "/home/x/Desktop/workspace/omx_tester/src/open_manipulator_msgs:srv/GetJointPosition.srv",
+    "/home/x/Desktop/workspace/omx_tester/src/open_manipulator_msgs:srv/GetKinematicsPose.srv",
+    "/home/x/Desktop/workspace/omx_tester/src/open_manipulator_msgs:srv/SetJointPosition.srv",
+    "/home/x/Desktop/workspace/omx_tester/src/open_manipulator_msgs:srv/SetKinematicsPose.srv",
+    "/home/x/Desktop/workspace/omx_tester/src/open_manipulator_msgs:srv/SetDrawingTrajectory.srv",
+    "/home/x/Desktop/workspace/omx_tester/src/open_manipulator_msgs:srv/SetActuatorState.srv"
+  ]
+}

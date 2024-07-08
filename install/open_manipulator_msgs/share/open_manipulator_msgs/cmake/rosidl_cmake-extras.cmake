@@ -1,0 +1,1 @@
+/home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_cmake/rosidl_cmake-extras.cmake

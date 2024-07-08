@@ -1,0 +1,1 @@
+/home/x/Desktop/workspace/omx_tester/build/robotis_manipulator/ament_cmake_core/robotis_manipulatorConfig-version.cmake

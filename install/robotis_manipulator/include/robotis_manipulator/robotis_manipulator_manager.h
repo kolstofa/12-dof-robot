@@ -1,0 +1,1 @@
+/home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_manager.h
