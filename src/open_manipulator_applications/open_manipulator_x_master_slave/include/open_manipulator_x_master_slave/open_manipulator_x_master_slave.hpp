@@ -90,7 +90,7 @@ class OpenManipulatorXMasterSlave : public rclcpp::Node
   /*****************************************************************************
   ** Others
   *****************************************************************************/
-  void init_open_manipulator_x(STRING usb_port = "/dev/ttyUSB0", STRING baud_rate = "1000000", double service_call_period = 0.010);
+  void init_open_manipulator_x(STRING usb_port = "/dev/ttyUSB0", STRING baud_rate = "57600", double service_call_period = 0.010);
   void sync_open_manipulator_x(bool recorded_state);
 
   void set_mode_state(char ch);

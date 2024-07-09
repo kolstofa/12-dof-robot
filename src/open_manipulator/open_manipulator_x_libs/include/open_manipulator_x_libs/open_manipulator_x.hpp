@@ -43,9 +43,10 @@ class OpenManipulatorX : public robotis_manipulator::RobotisManipulator
   void init_open_manipulator_x(
     bool sim, 
     STRING usb_port = "/dev/ttyUSB0", 
-    STRING baud_rate = "1000000", 
+    STRING baud_rate = "57600", 
     float control_loop_time = 0.010,
-    std::vector<uint8_t> dxl_id = {11, 12, 13, 14, 15});
+    // std::vector<uint8_t> dxl_id = {1, 2, 3, 4, 5, 6, 117});
+    std::vector<uint8_t> dxl_id = {21, 22, 23, 24, 25, 26, 27});
   void process_open_manipulator_x(double present_time);
 
  private:
