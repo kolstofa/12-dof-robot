@@ -28,7 +28,8 @@
 #define CUSTOM_TRAJECTORY_HEART   "custom_trajectory_heart"
 
 #define JOINT_DYNAMIXEL "joint_dxl"
-#define TOOL_DYNAMIXEL  "tool_dxl"
+#define TOOL_DYNAMIXEL1 "tool_dxl1"
+#define TOOL_DYNAMIXEL2 "tool_dxl2"
 
 #define X_AXIS robotis_manipulator::math::vector3(1.0, 0.0, 0.0)
 #define Y_AXIS robotis_manipulator::math::vector3(0.0, 1.0, 0.0)
@@ -45,14 +46,15 @@ class OpenManipulatorX : public robotis_manipulator::RobotisManipulator
     STRING usb_port = "/dev/ttyUSB0", 
     STRING baud_rate = "57600", 
     float control_loop_time = 0.010,
-    //std::vector<uint8_t> dxl_id = {1, 2, 3, 4, 5, 6, 7});
-    std::vector<uint8_t> dxl_id = {21, 22, 23, 24, 25, 26, 27});
+    std::vector<uint8_t> dxl_id = {21, 22, 23, 24, 25, 26, 27, 31, 32, 33, 34, 35, 36, 37});
   void process_open_manipulator_x(double present_time);
 
  private:
   robotis_manipulator::Kinematics *kinematics_;
-  robotis_manipulator::JointActuator *actuator_;
-  robotis_manipulator::ToolActuator *tool_;
+  robotis_manipulator::JointActuator *actuator_1;
+  robotis_manipulator::JointActuator *actuator_2;
+  robotis_manipulator::ToolActuator *tool_1;
+  robotis_manipulator::ToolActuator *tool_2;
   robotis_manipulator::CustomTaskTrajectory *custom_trajectory_[CUSTOM_TRAJECTORY_SIZE];
 };
 #endif // OPEN_MANIPULTOR_X_HPP
