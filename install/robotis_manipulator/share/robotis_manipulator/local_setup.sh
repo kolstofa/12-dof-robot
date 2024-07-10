@@ -1,1 +1,1 @@
-/home/x/Desktop/workspace/omx_tester/build/robotis_manipulator/ament_cmake_environment_hooks/local_setup.sh
+/home/x/Desktop/workspace/12-dof-robot/build/robotis_manipulator/ament_cmake_environment_hooks/local_setup.sh

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave
+CMAKE_SOURCE_DIR = /home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave
+CMAKE_BINARY_DIR = /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave
 
 # Include any dependencies generated for this target.
 include CMakeFiles/open_manipulator_x_master_slave.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/open_manipulator_x_master_slave.dir/progress.make
 include CMakeFiles/open_manipulator_x_master_slave.dir/flags.make
 
 CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.o: CMakeFiles/open_manipulator_x_master_slave.dir/flags.make
-CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.o: /home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp
+CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.o: /home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp
 CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.o: CMakeFiles/open_manipulator_x_master_slave.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.o -MF CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.o.d -o CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.o -c /home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.o -MF CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.o.d -o CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.o -c /home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp
 
 CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp > CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp > CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.i
 
 CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp -o CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp -o CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.s
 
 # Object files for target open_manipulator_x_master_slave
 open_manipulator_x_master_slave_OBJECTS = \
@@ -92,14 +92,14 @@ open_manipulator_x_master_slave_EXTERNAL_OBJECTS =
 
 open_manipulator_x_master_slave: CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.o
 open_manipulator_x_master_slave: CMakeFiles/open_manipulator_x_master_slave.dir/build.make
-open_manipulator_x_master_slave: /home/x/Desktop/workspace/omx_tester/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_typesupport_fastrtps_c.so
-open_manipulator_x_master_slave: /home/x/Desktop/workspace/omx_tester/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_typesupport_fastrtps_cpp.so
-open_manipulator_x_master_slave: /home/x/Desktop/workspace/omx_tester/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_typesupport_introspection_c.so
-open_manipulator_x_master_slave: /home/x/Desktop/workspace/omx_tester/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_typesupport_introspection_cpp.so
-open_manipulator_x_master_slave: /home/x/Desktop/workspace/omx_tester/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_typesupport_cpp.so
-open_manipulator_x_master_slave: /home/x/Desktop/workspace/omx_tester/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_generator_py.so
+open_manipulator_x_master_slave: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_typesupport_fastrtps_c.so
+open_manipulator_x_master_slave: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_typesupport_fastrtps_cpp.so
+open_manipulator_x_master_slave: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_typesupport_introspection_c.so
+open_manipulator_x_master_slave: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_typesupport_introspection_cpp.so
+open_manipulator_x_master_slave: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_typesupport_cpp.so
+open_manipulator_x_master_slave: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_generator_py.so
 open_manipulator_x_master_slave: /opt/ros/humble/lib/librclcpp.so
-open_manipulator_x_master_slave: /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/lib/libdynamixel_sdk.so
+open_manipulator_x_master_slave: /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/lib/libdynamixel_sdk.so
 open_manipulator_x_master_slave: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 open_manipulator_x_master_slave: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
 open_manipulator_x_master_slave: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
@@ -137,8 +137,8 @@ open_manipulator_x_master_slave: /opt/ros/humble/lib/libstatistics_msgs__rosidl_
 open_manipulator_x_master_slave: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_py.so
 open_manipulator_x_master_slave: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 open_manipulator_x_master_slave: /opt/ros/humble/lib/libtracetools.so
-open_manipulator_x_master_slave: /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/lib/libdynamixel_workbench_toolbox.so
-open_manipulator_x_master_slave: /home/x/Desktop/workspace/omx_tester/install/open_manipulator_x_libs/lib/libopen_manipulator_x_libs.so
+open_manipulator_x_master_slave: /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_workbench_toolbox/lib/libdynamixel_workbench_toolbox.so
+open_manipulator_x_master_slave: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/lib/libopen_manipulator_x_libs.so
 open_manipulator_x_master_slave: /opt/ros/humble/lib/librclcpp.so
 open_manipulator_x_master_slave: /opt/ros/humble/lib/liblibstatistics_collector.so
 open_manipulator_x_master_slave: /opt/ros/humble/lib/librcl.so
@@ -162,7 +162,7 @@ open_manipulator_x_master_slave: /opt/ros/humble/lib/libstatistics_msgs__rosidl_
 open_manipulator_x_master_slave: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
 open_manipulator_x_master_slave: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_py.so
 open_manipulator_x_master_slave: /opt/ros/humble/lib/libtracetools.so
-open_manipulator_x_master_slave: /home/x/Desktop/workspace/omx_tester/install/robotis_manipulator/lib/librobotis_manipulator.so
+open_manipulator_x_master_slave: /home/x/Desktop/workspace/12-dof-robot/install/robotis_manipulator/lib/librobotis_manipulator.so
 open_manipulator_x_master_slave: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 open_manipulator_x_master_slave: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
 open_manipulator_x_master_slave: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
@@ -173,8 +173,8 @@ open_manipulator_x_master_slave: /opt/ros/humble/lib/libgeometry_msgs__rosidl_ty
 open_manipulator_x_master_slave: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 open_manipulator_x_master_slave: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 open_manipulator_x_master_slave: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
-open_manipulator_x_master_slave: /home/x/Desktop/workspace/omx_tester/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_typesupport_c.so
-open_manipulator_x_master_slave: /home/x/Desktop/workspace/omx_tester/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_generator_c.so
+open_manipulator_x_master_slave: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_typesupport_c.so
+open_manipulator_x_master_slave: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_generator_c.so
 open_manipulator_x_master_slave: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
 open_manipulator_x_master_slave: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
 open_manipulator_x_master_slave: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
@@ -213,7 +213,7 @@ open_manipulator_x_master_slave: /opt/ros/humble/lib/librosidl_runtime_c.so
 open_manipulator_x_master_slave: /opt/ros/humble/lib/librcutils.so
 open_manipulator_x_master_slave: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 open_manipulator_x_master_slave: CMakeFiles/open_manipulator_x_master_slave.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable open_manipulator_x_master_slave"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable open_manipulator_x_master_slave"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/open_manipulator_x_master_slave.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -225,6 +225,6 @@ CMakeFiles/open_manipulator_x_master_slave.dir/clean:
 .PHONY : CMakeFiles/open_manipulator_x_master_slave.dir/clean
 
 CMakeFiles/open_manipulator_x_master_slave.dir/depend:
-	cd /home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave /home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave /home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave /home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave /home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/CMakeFiles/open_manipulator_x_master_slave.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave /home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/CMakeFiles/open_manipulator_x_master_slave.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/open_manipulator_x_master_slave.dir/depend
 

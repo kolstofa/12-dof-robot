@@ -1,1 +1,1 @@
-/home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/ament_cmake_python/open_manipulator_msgs/open_manipulator_msgs.egg-info/dependency_links.txt
+/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/ament_cmake_python/open_manipulator_msgs/open_manipulator_msgs.egg-info/dependency_links.txt

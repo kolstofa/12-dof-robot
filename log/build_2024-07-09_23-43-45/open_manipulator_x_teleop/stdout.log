@@ -1,0 +1,37 @@
+running develop
+Removing /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_teleop/lib/python3.10/site-packages/open-manipulator-x-teleop.egg-link (link to .)
+running egg_info
+writing ../../../build/open_manipulator_x_teleop/open_manipulator_x_teleop.egg-info/PKG-INFO
+writing dependency_links to ../../../build/open_manipulator_x_teleop/open_manipulator_x_teleop.egg-info/dependency_links.txt
+writing entry points to ../../../build/open_manipulator_x_teleop/open_manipulator_x_teleop.egg-info/entry_points.txt
+writing requirements to ../../../build/open_manipulator_x_teleop/open_manipulator_x_teleop.egg-info/requires.txt
+writing top-level names to ../../../build/open_manipulator_x_teleop/open_manipulator_x_teleop.egg-info/top_level.txt
+reading manifest file '../../../build/open_manipulator_x_teleop/open_manipulator_x_teleop.egg-info/SOURCES.txt'
+writing manifest file '../../../build/open_manipulator_x_teleop/open_manipulator_x_teleop.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_teleop/build
+creating /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_teleop/build/lib
+creating /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_teleop/build/lib/open_manipulator_x_teleop
+copying open_manipulator_x_teleop/__init__.py -> /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_teleop/build/lib/open_manipulator_x_teleop
+creating /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_teleop/build/lib/open_manipulator_x_teleop/script
+copying open_manipulator_x_teleop/script/teleop_keyboard.py -> /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_teleop/build/lib/open_manipulator_x_teleop/script
+copying open_manipulator_x_teleop/script/__init__.py -> /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_teleop/build/lib/open_manipulator_x_teleop/script
+running install
+running install_lib
+creating /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_teleop/lib/python3.10/site-packages/open_manipulator_x_teleop
+creating /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_teleop/lib/python3.10/site-packages/open_manipulator_x_teleop/script
+copying /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_teleop/build/lib/open_manipulator_x_teleop/script/teleop_keyboard.py -> /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_teleop/lib/python3.10/site-packages/open_manipulator_x_teleop/script
+copying /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_teleop/build/lib/open_manipulator_x_teleop/script/__init__.py -> /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_teleop/lib/python3.10/site-packages/open_manipulator_x_teleop/script
+copying /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_teleop/build/lib/open_manipulator_x_teleop/__init__.py -> /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_teleop/lib/python3.10/site-packages/open_manipulator_x_teleop
+byte-compiling /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_teleop/lib/python3.10/site-packages/open_manipulator_x_teleop/script/teleop_keyboard.py to teleop_keyboard.cpython-310.pyc
+byte-compiling /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_teleop/lib/python3.10/site-packages/open_manipulator_x_teleop/script/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_teleop/lib/python3.10/site-packages/open_manipulator_x_teleop/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/open_manipulator_x_teleop -> /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_teleop/share/ament_index/resource_index/packages
+copying package.xml -> /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_teleop/share/open_manipulator_x_teleop
+running install_egg_info
+Copying ../../../build/open_manipulator_x_teleop/open_manipulator_x_teleop.egg-info to /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_teleop/lib/python3.10/site-packages/open_manipulator_x_teleop-2.3.0-py3.10.egg-info
+running install_scripts
+Installing teleop_keyboard script to /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_teleop/lib/open_manipulator_x_teleop
+writing list of installed files to '/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_teleop/install.log'

@@ -1,1 +1,1 @@
-/home/x/Desktop/workspace/omx_tester/src/open_manipulator/open_manipulator_x_teleop/setup.py
+/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_teleop/setup.py

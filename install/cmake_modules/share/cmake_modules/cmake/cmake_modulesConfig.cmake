@@ -1,1 +1,1 @@
-/home/x/Desktop/workspace/omx_tester/build/cmake_modules/ament_cmake_core/cmake_modulesConfig.cmake
+/home/x/Desktop/workspace/12-dof-robot/build/cmake_modules/ament_cmake_core/cmake_modulesConfig.cmake

@@ -1,7 +1,7 @@
 CMakeFiles/open_manipulator_x_controller.dir/src/open_manipulator_x_controller.cpp.o: \
- /home/x/Desktop/workspace/omx_tester/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp \
+ /home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp \
  /usr/include/stdc-predef.h \
- /home/x/Desktop/workspace/omx_tester/src/open_manipulator/open_manipulator_x_controller/include/open_manipulator_x_controller/open_manipulator_x_controller.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/include/open_manipulator_x_controller/open_manipulator_x_controller.hpp \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/type_traits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -636,42 +636,42 @@ CMakeFiles/open_manipulator_x_controller.dir/src/open_manipulator_x_controller.c
  /opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__traits.hpp \
  /opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/joint_trajectory_point.hpp \
  /opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__builder.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/set_joint_position.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_joint_position__struct.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/msg/detail/joint_position__struct.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_joint_position__builder.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_joint_position__traits.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/msg/detail/joint_position__traits.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/set_kinematics_pose.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_kinematics_pose__struct.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/msg/detail/kinematics_pose__struct.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_kinematics_pose__builder.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_kinematics_pose__traits.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/msg/detail/kinematics_pose__traits.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/set_drawing_trajectory.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_drawing_trajectory__struct.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_drawing_trajectory__builder.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_drawing_trajectory__traits.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/set_actuator_state.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_actuator_state__struct.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_actuator_state__builder.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_actuator_state__traits.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/get_joint_position.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/get_joint_position__struct.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/get_joint_position__builder.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/get_joint_position__traits.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/get_kinematics_pose.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/get_kinematics_pose__struct.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/get_kinematics_pose__builder.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/get_kinematics_pose__traits.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/msg/open_manipulator_state.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/msg/detail/open_manipulator_state__struct.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/msg/detail/open_manipulator_state__builder.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/msg/detail/open_manipulator_state__traits.hpp \
- /home/x/Desktop/workspace/omx_tester/install/open_manipulator_x_libs/include/open_manipulator_x_libs/open_manipulator_x.hpp \
- /home/x/Desktop/workspace/omx_tester/install/open_manipulator_x_libs/include/open_manipulator_x_libs/dynamixel.hpp \
- /home/x/Desktop/workspace/omx_tester/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator.h \
- /home/x/Desktop/workspace/omx_tester/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_common.h \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/set_joint_position.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_joint_position__struct.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/msg/detail/joint_position__struct.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_joint_position__builder.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_joint_position__traits.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/msg/detail/joint_position__traits.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/set_kinematics_pose.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_kinematics_pose__struct.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/msg/detail/kinematics_pose__struct.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_kinematics_pose__builder.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_kinematics_pose__traits.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/msg/detail/kinematics_pose__traits.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/set_drawing_trajectory.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_drawing_trajectory__struct.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_drawing_trajectory__builder.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_drawing_trajectory__traits.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/set_actuator_state.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_actuator_state__struct.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_actuator_state__builder.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_actuator_state__traits.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/get_joint_position.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/get_joint_position__struct.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/get_joint_position__builder.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/get_joint_position__traits.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/get_kinematics_pose.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/get_kinematics_pose__struct.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/get_kinematics_pose__builder.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/get_kinematics_pose__traits.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/msg/open_manipulator_state.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/msg/detail/open_manipulator_state__struct.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/msg/detail/open_manipulator_state__builder.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/msg/detail/open_manipulator_state__traits.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/include/open_manipulator_x_libs/open_manipulator_x.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/include/open_manipulator_x_libs/dynamixel.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_common.h \
  /usr/include/eigen3/Eigen/Eigen /usr/include/eigen3/Eigen/Dense \
  /usr/include/eigen3/Eigen/Core \
  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
@@ -946,21 +946,21 @@ CMakeFiles/open_manipulator_x_controller.dir/src/open_manipulator_x_controller.c
  /usr/include/eigen3/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h \
  /usr/include/eigen3/Eigen/src/IterativeLinearSolvers/IncompleteCholesky.h \
  /usr/include/eigen3/Eigen/LU /usr/include/c++/11/math.h \
- /home/x/Desktop/workspace/omx_tester/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_math.h \
- /home/x/Desktop/workspace/omx_tester/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_log.h \
- /home/x/Desktop/workspace/omx_tester/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_manager.h \
- /home/x/Desktop/workspace/omx_tester/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_trajectory_generator.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_math.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_log.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_manager.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_trajectory_generator.h \
  /usr/include/eigen3/Eigen/QR \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_workbench.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_driver.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_tool.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_item.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/dynamixel_sdk.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/group_bulk_read.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/port_handler.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/packet_handler.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/group_bulk_write.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/group_sync_read.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/group_sync_write.h \
- /home/x/Desktop/workspace/omx_tester/install/open_manipulator_x_libs/include/open_manipulator_x_libs/custom_trajectory.hpp \
- /home/x/Desktop/workspace/omx_tester/install/open_manipulator_x_libs/include/open_manipulator_x_libs/kinematics.hpp
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_workbench.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_driver.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_tool.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_item.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/dynamixel_sdk.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/group_bulk_read.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/port_handler.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/packet_handler.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/group_bulk_write.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/group_sync_read.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/group_sync_write.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/include/open_manipulator_x_libs/custom_trajectory.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/include/open_manipulator_x_libs/kinematics.hpp

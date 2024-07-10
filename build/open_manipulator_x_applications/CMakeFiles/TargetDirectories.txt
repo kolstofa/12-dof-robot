@@ -1,0 +1,9 @@
+/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_applications/CMakeFiles/uninstall.dir
+/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_applications/CMakeFiles/open_manipulator_x_applications_uninstall.dir
+/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_applications/CMakeFiles/test.dir
+/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_applications/CMakeFiles/edit_cache.dir
+/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_applications/CMakeFiles/rebuild_cache.dir
+/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_applications/CMakeFiles/list_install_components.dir
+/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_applications/CMakeFiles/install.dir
+/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_applications/CMakeFiles/install/local.dir
+/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_applications/CMakeFiles/install/strip.dir

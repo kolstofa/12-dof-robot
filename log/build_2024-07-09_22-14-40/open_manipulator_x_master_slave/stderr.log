@@ -1,0 +1,6 @@
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp:[m[K In member function ‘[01m[Kbool OpenManipulatorXMasterSlave::set_tool_control(double)[m[K’:
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp:215:12:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 2 has type ‘[01m[KOpenManipulatorXMasterSlave::set_tool_control(double)::<lambda(ServiceResponseFuture)>[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  215 |   printf("[01;35m[K%d[m[K \n", [32m[Kresponse_received_callback[m[K);
+      |           [01;35m[K~^[m[K      [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |            [01;35m[K|[m[K      [32m[K|[m[K
+      |            [01;35m[Kint[m[K    [32m[KOpenManipulatorXMasterSlave::set_tool_control(double)::<lambda(ServiceResponseFuture)>[m[K

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/x/Desktop/workspace/omx_tester/src/dynamixel-workbench/dynamixel_workbench
+CMAKE_SOURCE_DIR = /home/x/Desktop/workspace/12-dof-robot/src/dynamixel-workbench/dynamixel_workbench
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/x/Desktop/workspace/omx_tester/build/dynamixel_workbench
+CMAKE_BINARY_DIR = /home/x/Desktop/workspace/12-dof-robot/build/dynamixel_workbench
 
 # Utility rule file for dynamixel_workbench_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/dynamixel_workbench_uninstall.dir/compiler_depend.make
 include CMakeFiles/dynamixel_workbench_uninstall.dir/progress.make
 
 CMakeFiles/dynamixel_workbench_uninstall:
-	/usr/bin/cmake -P /home/x/Desktop/workspace/omx_tester/build/dynamixel_workbench/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/x/Desktop/workspace/12-dof-robot/build/dynamixel_workbench/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 dynamixel_workbench_uninstall: CMakeFiles/dynamixel_workbench_uninstall
 dynamixel_workbench_uninstall: CMakeFiles/dynamixel_workbench_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/dynamixel_workbench_uninstall.dir/clean:
 .PHONY : CMakeFiles/dynamixel_workbench_uninstall.dir/clean
 
 CMakeFiles/dynamixel_workbench_uninstall.dir/depend:
-	cd /home/x/Desktop/workspace/omx_tester/build/dynamixel_workbench && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/x/Desktop/workspace/omx_tester/src/dynamixel-workbench/dynamixel_workbench /home/x/Desktop/workspace/omx_tester/src/dynamixel-workbench/dynamixel_workbench /home/x/Desktop/workspace/omx_tester/build/dynamixel_workbench /home/x/Desktop/workspace/omx_tester/build/dynamixel_workbench /home/x/Desktop/workspace/omx_tester/build/dynamixel_workbench/CMakeFiles/dynamixel_workbench_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/x/Desktop/workspace/12-dof-robot/build/dynamixel_workbench && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/x/Desktop/workspace/12-dof-robot/src/dynamixel-workbench/dynamixel_workbench /home/x/Desktop/workspace/12-dof-robot/src/dynamixel-workbench/dynamixel_workbench /home/x/Desktop/workspace/12-dof-robot/build/dynamixel_workbench /home/x/Desktop/workspace/12-dof-robot/build/dynamixel_workbench /home/x/Desktop/workspace/12-dof-robot/build/dynamixel_workbench/CMakeFiles/dynamixel_workbench_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dynamixel_workbench_uninstall.dir/depend
 

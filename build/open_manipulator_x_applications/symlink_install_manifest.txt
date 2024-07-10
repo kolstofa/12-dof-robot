@@ -1,0 +1,15 @@
+/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/ament_index/resource_index/package_run_dependencies/open_manipulator_x_applications
+/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/ament_index/resource_index/parent_prefix_path/open_manipulator_x_applications
+/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/open_manipulator_x_applications/environment/ament_prefix_path.sh
+/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/open_manipulator_x_applications/environment/ament_prefix_path.dsv
+/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/open_manipulator_x_applications/environment/path.sh
+/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/open_manipulator_x_applications/environment/path.dsv
+/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/open_manipulator_x_applications/local_setup.bash
+/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/open_manipulator_x_applications/local_setup.sh
+/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/open_manipulator_x_applications/local_setup.zsh
+/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/open_manipulator_x_applications/local_setup.dsv
+/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/open_manipulator_x_applications/package.dsv
+/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/ament_index/resource_index/packages/open_manipulator_x_applications
+/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/open_manipulator_x_applications/cmake/open_manipulator_x_applicationsConfig.cmake
+/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/open_manipulator_x_applications/cmake/open_manipulator_x_applicationsConfig-version.cmake
+/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/open_manipulator_x_applications/package.xml

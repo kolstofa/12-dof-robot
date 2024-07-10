@@ -1,1 +1,1 @@
-/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_description/ament_cmake_environment_hooks/local_setup.sh
+/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_description/ament_cmake_environment_hooks/local_setup.sh

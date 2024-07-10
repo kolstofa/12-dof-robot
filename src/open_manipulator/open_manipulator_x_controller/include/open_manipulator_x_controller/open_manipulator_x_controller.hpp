@@ -55,6 +55,7 @@ class OpenManipulatorXController : public rclcpp::Node
   *****************************************************************************/
   bool sim_;
   double control_period_;
+  std::vector<uint8_t> dxl_id_;
 
   /*****************************************************************************
   ** Variables

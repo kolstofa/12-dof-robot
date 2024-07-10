@@ -1,1 +1,1 @@
-/home/x/Desktop/workspace/omx_tester/src/DynamixelSDK/dynamixel_sdk_custom_interfaces/msg/SetPosition.msg
+/home/x/Desktop/workspace/12-dof-robot/src/DynamixelSDK/dynamixel_sdk_custom_interfaces/msg/SetPosition.msg

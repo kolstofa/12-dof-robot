@@ -1,7 +1,7 @@
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_manager.cpp.o: \
- /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_manager.cpp \
+ /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_manager.cpp \
  /usr/include/stdc-predef.h \
- /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/../../include/robotis_manipulator/robotis_manipulator_manager.h \
+ /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/../../include/robotis_manipulator/robotis_manipulator_manager.h \
  /usr/include/eigen3/Eigen/Eigen /usr/include/eigen3/Eigen/Dense \
  /usr/include/eigen3/Eigen/Core \
  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
@@ -479,7 +479,7 @@ CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_m
  /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/bits/list.tcc \
- /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/../../include/robotis_manipulator/robotis_manipulator_common.h \
+ /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/../../include/robotis_manipulator/robotis_manipulator_common.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
@@ -488,5 +488,5 @@ CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_m
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h /usr/include/eigen3/Eigen/LU \
  /usr/include/c++/11/math.h \
- /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/../../include/robotis_manipulator/robotis_manipulator_math.h \
- /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/../../include/robotis_manipulator/robotis_manipulator_log.h
+ /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/../../include/robotis_manipulator/robotis_manipulator_math.h \
+ /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/../../include/robotis_manipulator/robotis_manipulator_log.h

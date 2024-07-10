@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator
+CMAKE_SOURCE_DIR = /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/x/Desktop/workspace/omx_tester/build/robotis_manipulator
+CMAKE_BINARY_DIR = /home/x/Desktop/workspace/12-dof-robot/build/robotis_manipulator
 
 # Include any dependencies generated for this target.
 include CMakeFiles/robotis_manipulator.dir/depend.make
@@ -70,88 +70,88 @@ include CMakeFiles/robotis_manipulator.dir/progress.make
 include CMakeFiles/robotis_manipulator.dir/flags.make
 
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator.cpp.o: CMakeFiles/robotis_manipulator.dir/flags.make
-CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator.cpp.o: /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator.cpp
+CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator.cpp.o: /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator.cpp
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator.cpp.o: CMakeFiles/robotis_manipulator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/x/Desktop/workspace/omx_tester/build/robotis_manipulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator.cpp.o -MF CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator.cpp.o.d -o CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator.cpp.o -c /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/x/Desktop/workspace/12-dof-robot/build/robotis_manipulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator.cpp.o -MF CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator.cpp.o.d -o CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator.cpp.o -c /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator.cpp
 
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator.cpp > CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator.cpp > CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator.cpp.i
 
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator.cpp -o CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator.cpp -o CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator.cpp.s
 
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_common.cpp.o: CMakeFiles/robotis_manipulator.dir/flags.make
-CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_common.cpp.o: /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_common.cpp
+CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_common.cpp.o: /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_common.cpp
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_common.cpp.o: CMakeFiles/robotis_manipulator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/x/Desktop/workspace/omx_tester/build/robotis_manipulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_common.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_common.cpp.o -MF CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_common.cpp.o.d -o CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_common.cpp.o -c /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_common.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/x/Desktop/workspace/12-dof-robot/build/robotis_manipulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_common.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_common.cpp.o -MF CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_common.cpp.o.d -o CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_common.cpp.o -c /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_common.cpp
 
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_common.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_common.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_common.cpp > CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_common.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_common.cpp > CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_common.cpp.i
 
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_common.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_common.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_common.cpp -o CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_common.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_common.cpp -o CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_common.cpp.s
 
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_log.cpp.o: CMakeFiles/robotis_manipulator.dir/flags.make
-CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_log.cpp.o: /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_log.cpp
+CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_log.cpp.o: /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_log.cpp
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_log.cpp.o: CMakeFiles/robotis_manipulator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/x/Desktop/workspace/omx_tester/build/robotis_manipulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_log.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_log.cpp.o -MF CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_log.cpp.o.d -o CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_log.cpp.o -c /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_log.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/x/Desktop/workspace/12-dof-robot/build/robotis_manipulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_log.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_log.cpp.o -MF CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_log.cpp.o.d -o CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_log.cpp.o -c /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_log.cpp
 
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_log.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_log.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_log.cpp > CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_log.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_log.cpp > CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_log.cpp.i
 
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_log.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_log.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_log.cpp -o CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_log.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_log.cpp -o CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_log.cpp.s
 
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp.o: CMakeFiles/robotis_manipulator.dir/flags.make
-CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp.o: /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp
+CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp.o: /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp.o: CMakeFiles/robotis_manipulator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/x/Desktop/workspace/omx_tester/build/robotis_manipulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp.o -MF CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp.o.d -o CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp.o -c /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/x/Desktop/workspace/12-dof-robot/build/robotis_manipulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp.o -MF CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp.o.d -o CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp.o -c /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp
 
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp > CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp > CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp.i
 
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp -o CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp -o CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp.s
 
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_manager.cpp.o: CMakeFiles/robotis_manipulator.dir/flags.make
-CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_manager.cpp.o: /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_manager.cpp
+CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_manager.cpp.o: /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_manager.cpp
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_manager.cpp.o: CMakeFiles/robotis_manipulator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/x/Desktop/workspace/omx_tester/build/robotis_manipulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_manager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_manager.cpp.o -MF CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_manager.cpp.o.d -o CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_manager.cpp.o -c /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/x/Desktop/workspace/12-dof-robot/build/robotis_manipulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_manager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_manager.cpp.o -MF CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_manager.cpp.o.d -o CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_manager.cpp.o -c /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_manager.cpp
 
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_manager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_manager.cpp > CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_manager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_manager.cpp > CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_manager.cpp.i
 
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_manager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_manager.cpp -o CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_manager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_manager.cpp -o CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_manager.cpp.s
 
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_math.cpp.o: CMakeFiles/robotis_manipulator.dir/flags.make
-CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_math.cpp.o: /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_math.cpp
+CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_math.cpp.o: /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_math.cpp
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_math.cpp.o: CMakeFiles/robotis_manipulator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/x/Desktop/workspace/omx_tester/build/robotis_manipulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_math.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_math.cpp.o -MF CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_math.cpp.o.d -o CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_math.cpp.o -c /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_math.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/x/Desktop/workspace/12-dof-robot/build/robotis_manipulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_math.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_math.cpp.o -MF CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_math.cpp.o.d -o CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_math.cpp.o -c /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_math.cpp
 
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_math.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_math.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_math.cpp > CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_math.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_math.cpp > CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_math.cpp.i
 
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_math.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_math.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_math.cpp -o CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_math.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_math.cpp -o CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_math.cpp.s
 
 # Object files for target robotis_manipulator
 robotis_manipulator_OBJECTS = \
@@ -227,7 +227,7 @@ librobotis_manipulator.so: /opt/ros/humble/lib/librcutils.so
 librobotis_manipulator.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 librobotis_manipulator.so: /opt/ros/humble/lib/libtracetools.so
 librobotis_manipulator.so: CMakeFiles/robotis_manipulator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/x/Desktop/workspace/omx_tester/build/robotis_manipulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library librobotis_manipulator.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/x/Desktop/workspace/12-dof-robot/build/robotis_manipulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library librobotis_manipulator.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/robotis_manipulator.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -239,6 +239,6 @@ CMakeFiles/robotis_manipulator.dir/clean:
 .PHONY : CMakeFiles/robotis_manipulator.dir/clean
 
 CMakeFiles/robotis_manipulator.dir/depend:
-	cd /home/x/Desktop/workspace/omx_tester/build/robotis_manipulator && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator /home/x/Desktop/workspace/omx_tester/build/robotis_manipulator /home/x/Desktop/workspace/omx_tester/build/robotis_manipulator /home/x/Desktop/workspace/omx_tester/build/robotis_manipulator/CMakeFiles/robotis_manipulator.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/x/Desktop/workspace/12-dof-robot/build/robotis_manipulator && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator /home/x/Desktop/workspace/12-dof-robot/build/robotis_manipulator /home/x/Desktop/workspace/12-dof-robot/build/robotis_manipulator /home/x/Desktop/workspace/12-dof-robot/build/robotis_manipulator/CMakeFiles/robotis_manipulator.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/robotis_manipulator.dir/depend
 

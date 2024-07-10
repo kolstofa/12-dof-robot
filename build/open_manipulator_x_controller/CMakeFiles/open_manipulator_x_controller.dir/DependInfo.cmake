@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/x/Desktop/workspace/omx_tester/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp" "CMakeFiles/open_manipulator_x_controller.dir/src/open_manipulator_x_controller.cpp.o" "gcc" "CMakeFiles/open_manipulator_x_controller.dir/src/open_manipulator_x_controller.cpp.o.d"
+  "/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp" "CMakeFiles/open_manipulator_x_controller.dir/src/open_manipulator_x_controller.cpp.o" "gcc" "CMakeFiles/open_manipulator_x_controller.dir/src/open_manipulator_x_controller.cpp.o.d"
   )
 
 # Targets to which this target links.

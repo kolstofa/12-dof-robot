@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/x/Desktop/workspace/omx_tester/src/open_manipulator/open_manipulator_x_libs
+CMAKE_SOURCE_DIR = /home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_libs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_libs
+CMAKE_BINARY_DIR = /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_libs
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_libs/CMakeFiles /home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_libs//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_libs/CMakeFiles /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_libs//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_libs/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_libs/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

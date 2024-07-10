@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/x/Desktop/workspace/omx_tester/src/open_manipulator/open_manipulator_x_libs/src/custom_trajectory.cpp" "CMakeFiles/open_manipulator_x_libs.dir/src/custom_trajectory.cpp.o" "gcc" "CMakeFiles/open_manipulator_x_libs.dir/src/custom_trajectory.cpp.o.d"
-  "/home/x/Desktop/workspace/omx_tester/src/open_manipulator/open_manipulator_x_libs/src/dynamixel.cpp" "CMakeFiles/open_manipulator_x_libs.dir/src/dynamixel.cpp.o" "gcc" "CMakeFiles/open_manipulator_x_libs.dir/src/dynamixel.cpp.o.d"
-  "/home/x/Desktop/workspace/omx_tester/src/open_manipulator/open_manipulator_x_libs/src/kinematics.cpp" "CMakeFiles/open_manipulator_x_libs.dir/src/kinematics.cpp.o" "gcc" "CMakeFiles/open_manipulator_x_libs.dir/src/kinematics.cpp.o.d"
-  "/home/x/Desktop/workspace/omx_tester/src/open_manipulator/open_manipulator_x_libs/src/open_manipulator_x.cpp" "CMakeFiles/open_manipulator_x_libs.dir/src/open_manipulator_x.cpp.o" "gcc" "CMakeFiles/open_manipulator_x_libs.dir/src/open_manipulator_x.cpp.o.d"
+  "/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_libs/src/custom_trajectory.cpp" "CMakeFiles/open_manipulator_x_libs.dir/src/custom_trajectory.cpp.o" "gcc" "CMakeFiles/open_manipulator_x_libs.dir/src/custom_trajectory.cpp.o.d"
+  "/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_libs/src/dynamixel.cpp" "CMakeFiles/open_manipulator_x_libs.dir/src/dynamixel.cpp.o" "gcc" "CMakeFiles/open_manipulator_x_libs.dir/src/dynamixel.cpp.o.d"
+  "/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_libs/src/kinematics.cpp" "CMakeFiles/open_manipulator_x_libs.dir/src/kinematics.cpp.o" "gcc" "CMakeFiles/open_manipulator_x_libs.dir/src/kinematics.cpp.o.d"
+  "/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_libs/src/open_manipulator_x.cpp" "CMakeFiles/open_manipulator_x_libs.dir/src/open_manipulator_x.cpp.o" "gcc" "CMakeFiles/open_manipulator_x_libs.dir/src/open_manipulator_x.cpp.o.d"
   )
 
 # Targets to which this target links.

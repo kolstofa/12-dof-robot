@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator
+CMAKE_SOURCE_DIR = /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/x/Desktop/workspace/omx_tester/build/robotis_manipulator
+CMAKE_BINARY_DIR = /home/x/Desktop/workspace/12-dof-robot/build/robotis_manipulator
 
 # Utility rule file for robotis_manipulator_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/robotis_manipulator_uninstall.dir/compiler_depend.make
 include CMakeFiles/robotis_manipulator_uninstall.dir/progress.make
 
 CMakeFiles/robotis_manipulator_uninstall:
-	/usr/bin/cmake -P /home/x/Desktop/workspace/omx_tester/build/robotis_manipulator/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/x/Desktop/workspace/12-dof-robot/build/robotis_manipulator/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 robotis_manipulator_uninstall: CMakeFiles/robotis_manipulator_uninstall
 robotis_manipulator_uninstall: CMakeFiles/robotis_manipulator_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/robotis_manipulator_uninstall.dir/clean:
 .PHONY : CMakeFiles/robotis_manipulator_uninstall.dir/clean
 
 CMakeFiles/robotis_manipulator_uninstall.dir/depend:
-	cd /home/x/Desktop/workspace/omx_tester/build/robotis_manipulator && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator /home/x/Desktop/workspace/omx_tester/build/robotis_manipulator /home/x/Desktop/workspace/omx_tester/build/robotis_manipulator /home/x/Desktop/workspace/omx_tester/build/robotis_manipulator/CMakeFiles/robotis_manipulator_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/x/Desktop/workspace/12-dof-robot/build/robotis_manipulator && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator /home/x/Desktop/workspace/12-dof-robot/build/robotis_manipulator /home/x/Desktop/workspace/12-dof-robot/build/robotis_manipulator /home/x/Desktop/workspace/12-dof-robot/build/robotis_manipulator/CMakeFiles/robotis_manipulator_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/robotis_manipulator_uninstall.dir/depend
 

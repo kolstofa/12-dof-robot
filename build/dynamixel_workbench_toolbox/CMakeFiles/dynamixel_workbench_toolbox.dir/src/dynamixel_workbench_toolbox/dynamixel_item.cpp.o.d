@@ -1,7 +1,7 @@
 CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_item.cpp.o: \
- /home/x/Desktop/workspace/omx_tester/src/dynamixel-workbench/dynamixel_workbench_toolbox/src/dynamixel_workbench_toolbox/dynamixel_item.cpp \
+ /home/x/Desktop/workspace/12-dof-robot/src/dynamixel-workbench/dynamixel_workbench_toolbox/src/dynamixel_workbench_toolbox/dynamixel_item.cpp \
  /usr/include/stdc-predef.h \
- /home/x/Desktop/workspace/omx_tester/src/dynamixel-workbench/dynamixel_workbench_toolbox/src/dynamixel_workbench_toolbox/../../include/dynamixel_workbench_toolbox/dynamixel_item.h \
+ /home/x/Desktop/workspace/12-dof-robot/src/dynamixel-workbench/dynamixel_workbench_toolbox/src/dynamixel_workbench_toolbox/../../include/dynamixel_workbench_toolbox/dynamixel_item.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

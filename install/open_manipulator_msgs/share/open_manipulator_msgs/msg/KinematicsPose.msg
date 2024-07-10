@@ -1,1 +1,1 @@
-/home/x/Desktop/workspace/omx_tester/src/open_manipulator_msgs/msg/KinematicsPose.msg
+/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_msgs/msg/KinematicsPose.msg

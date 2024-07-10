@@ -1,0 +1,52 @@
+[0.020s] Invoking command in '/home/x/Desktop/workspace/12-dof-robot/build/cmake_modules': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_teleop:/home/x/omx_ws/install/open_manipulator_x_teleop:/home/x/Desktop/workspace/omx_tester/install/open_manipulator_x_teleop:/opt/ros/humble /usr/bin/cmake /home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_dependencies/cmake_modules -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/x/Desktop/workspace/12-dof-robot/install/cmake_modules
+[0.057s] -- The C compiler identification is GNU 11.4.0
+[0.096s] -- The CXX compiler identification is GNU 11.4.0
+[0.103s] -- Detecting C compiler ABI info
+[0.149s] -- Detecting C compiler ABI info - done
+[0.154s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.154s] -- Detecting C compile features
+[0.154s] -- Detecting C compile features - done
+[0.156s] -- Detecting CXX compiler ABI info
+[0.211s] -- Detecting CXX compiler ABI info - done
+[0.220s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.221s] -- Detecting CXX compile features
+[0.221s] -- Detecting CXX compile features - done
+[0.226s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.346s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.398s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.485s] -- Configuring done
+[0.487s] -- Generating done
+[0.488s] -- Build files have been written to: /home/x/Desktop/workspace/12-dof-robot/build/cmake_modules
+[0.492s] Invoked command in '/home/x/Desktop/workspace/12-dof-robot/build/cmake_modules' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_teleop:/home/x/omx_ws/install/open_manipulator_x_teleop:/home/x/Desktop/workspace/omx_tester/install/open_manipulator_x_teleop:/opt/ros/humble /usr/bin/cmake /home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_dependencies/cmake_modules -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/x/Desktop/workspace/12-dof-robot/install/cmake_modules
+[0.493s] Invoking command in '/home/x/Desktop/workspace/12-dof-robot/build/cmake_modules': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_teleop:/home/x/omx_ws/install/open_manipulator_x_teleop:/home/x/Desktop/workspace/omx_tester/install/open_manipulator_x_teleop:/opt/ros/humble /usr/bin/cmake --build /home/x/Desktop/workspace/12-dof-robot/build/cmake_modules -- -j20 -l20
+[0.527s] Invoked command in '/home/x/Desktop/workspace/12-dof-robot/build/cmake_modules' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_teleop:/home/x/omx_ws/install/open_manipulator_x_teleop:/home/x/Desktop/workspace/omx_tester/install/open_manipulator_x_teleop:/opt/ros/humble /usr/bin/cmake --build /home/x/Desktop/workspace/12-dof-robot/build/cmake_modules -- -j20 -l20
+[0.552s] Invoking command in '/home/x/Desktop/workspace/12-dof-robot/build/cmake_modules': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_teleop:/home/x/omx_ws/install/open_manipulator_x_teleop:/home/x/Desktop/workspace/omx_tester/install/open_manipulator_x_teleop:/opt/ros/humble /usr/bin/cmake --install /home/x/Desktop/workspace/12-dof-robot/build/cmake_modules
+[0.560s] -- Install configuration: ""
+[0.560s] -- Execute custom install script
+[0.561s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/cmake_modules/cmake/Modules/FindGSL.cmake
+[0.571s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/cmake_modules/cmake/Modules/FindGflags.cmake
+[0.581s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/cmake_modules/cmake/Modules/FindNUMPY.cmake
+[0.588s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/cmake_modules/cmake/Modules/FindPoco.cmake
+[0.596s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/cmake_modules/cmake/Modules/FindTBB.cmake
+[0.603s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/cmake_modules/cmake/Modules/FindTinyXML.cmake
+[0.610s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/cmake_modules/cmake/Modules/FindTinyXML2.cmake
+[0.616s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/cmake_modules/cmake/Modules/FindUUID.cmake
+[0.624s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/cmake_modules/cmake/Modules/FindXenomai.cmake
+[0.633s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/ament_index/resource_index/package_run_dependencies/cmake_modules
+[0.640s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/ament_index/resource_index/parent_prefix_path/cmake_modules
+[0.647s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/cmake_modules/environment/ament_prefix_path.sh
+[0.654s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/cmake_modules/environment/ament_prefix_path.dsv
+[0.661s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/cmake_modules/environment/path.sh
+[0.673s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/cmake_modules/environment/path.dsv
+[0.678s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/cmake_modules/local_setup.bash
+[0.685s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/cmake_modules/local_setup.sh
+[0.692s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/cmake_modules/local_setup.zsh
+[0.698s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/cmake_modules/local_setup.dsv
+[0.708s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/cmake_modules/package.dsv
+[0.716s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/ament_index/resource_index/packages/cmake_modules
+[0.723s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/cmake_modules/cmake/cmake_modules-extras.cmake
+[0.730s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/cmake_modules/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.737s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/cmake_modules/cmake/cmake_modulesConfig.cmake
+[0.743s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/cmake_modules/cmake/cmake_modulesConfig-version.cmake
+[0.751s] -- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/cmake_modules/share/cmake_modules/package.xml
+[0.760s] Invoked command in '/home/x/Desktop/workspace/12-dof-robot/build/cmake_modules' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_teleop:/home/x/omx_ws/install/open_manipulator_x_teleop:/home/x/Desktop/workspace/omx_tester/install/open_manipulator_x_teleop:/opt/ros/humble /usr/bin/cmake --install /home/x/Desktop/workspace/12-dof-robot/build/cmake_modules

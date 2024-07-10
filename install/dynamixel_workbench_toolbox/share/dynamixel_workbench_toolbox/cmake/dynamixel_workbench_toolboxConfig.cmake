@@ -1,1 +1,1 @@
-/home/x/Desktop/workspace/omx_tester/build/dynamixel_workbench_toolbox/ament_cmake_core/dynamixel_workbench_toolboxConfig.cmake
+/home/x/Desktop/workspace/12-dof-robot/build/dynamixel_workbench_toolbox/ament_cmake_core/dynamixel_workbench_toolboxConfig.cmake

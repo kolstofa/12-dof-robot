@@ -1,0 +1,17 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/ament_index/resource_index/package_run_dependencies/open_manipulator_x_applications
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/ament_index/resource_index/parent_prefix_path/open_manipulator_x_applications
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/open_manipulator_x_applications/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/open_manipulator_x_applications/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/open_manipulator_x_applications/environment/path.sh
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/open_manipulator_x_applications/environment/path.dsv
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/open_manipulator_x_applications/local_setup.bash
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/open_manipulator_x_applications/local_setup.sh
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/open_manipulator_x_applications/local_setup.zsh
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/open_manipulator_x_applications/local_setup.dsv
+-- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/open_manipulator_x_applications/package.dsv
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/ament_index/resource_index/packages/open_manipulator_x_applications
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/open_manipulator_x_applications/cmake/open_manipulator_x_applicationsConfig.cmake
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/open_manipulator_x_applications/cmake/open_manipulator_x_applicationsConfig-version.cmake
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_applications/share/open_manipulator_x_applications/package.xml

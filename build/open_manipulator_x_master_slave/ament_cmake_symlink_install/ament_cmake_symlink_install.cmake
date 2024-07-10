@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/x/Desktop/workspace/omx_tester/install/open_manipulator_x_master_slave/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_master_slave/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/x/Desktop/workspace/omx_tester/install/open_manipulator_x_master_slave/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_master_slave/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/x/Desktop/workspace/omx_tester/install/open_manipulator_x_master_slave/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_master_slave/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/x/Desktop/workspace/omx_tester/install/open_manipulator_x_master_slave/${destination}")
+      set(destination "/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_master_slave/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -311,58 +311,58 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install("TARGETS" "open_manipulator_x_master_slave" "DESTINATION" "lib/open_manipulator_x_master_slave")
-include("/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "launch" "param" "DESTINATION" "share/open_manipulator_x_master_slave")
-ament_cmake_symlink_install_directory("/home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave" DIRECTORY "launch" "param" "DESTINATION" "share/open_manipulator_x_master_slave")
+ament_cmake_symlink_install_directory("/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave" DIRECTORY "launch" "param" "DESTINATION" "share/open_manipulator_x_master_slave")
 
 # install(DIRECTORY "include/" "DESTINATION" "include/")
-ament_cmake_symlink_install_directory("/home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave" DIRECTORY "include/" "DESTINATION" "include/")
+ament_cmake_symlink_install_directory("/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave" DIRECTORY "include/" "DESTINATION" "include/")
 
-# install(FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/open_manipulator_x_master_slave" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/open_manipulator_x_master_slave" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/open_manipulator_x_master_slave" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/open_manipulator_x_master_slave" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/open_manipulator_x_master_slave" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/open_manipulator_x_master_slave" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/open_manipulator_x_master_slave" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/open_manipulator_x_master_slave" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/open_manipulator_x_master_slave/environment")
-ament_cmake_symlink_install_files("/home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/open_manipulator_x_master_slave/environment")
+ament_cmake_symlink_install_files("/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/open_manipulator_x_master_slave/environment")
 
-# install(FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/open_manipulator_x_master_slave/environment")
-ament_cmake_symlink_install_files("/home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/open_manipulator_x_master_slave/environment")
+# install(FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/open_manipulator_x_master_slave/environment")
+ament_cmake_symlink_install_files("/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/open_manipulator_x_master_slave/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/open_manipulator_x_master_slave/environment")
-ament_cmake_symlink_install_files("/home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/open_manipulator_x_master_slave/environment")
+ament_cmake_symlink_install_files("/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/open_manipulator_x_master_slave/environment")
 
-# install(FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/open_manipulator_x_master_slave/environment")
-ament_cmake_symlink_install_files("/home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/open_manipulator_x_master_slave/environment")
+# install(FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/open_manipulator_x_master_slave/environment")
+ament_cmake_symlink_install_files("/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/open_manipulator_x_master_slave/environment")
 
-# install(FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/open_manipulator_x_master_slave")
-ament_cmake_symlink_install_files("/home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/open_manipulator_x_master_slave")
+# install(FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/open_manipulator_x_master_slave")
+ament_cmake_symlink_install_files("/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/open_manipulator_x_master_slave")
 
-# install(FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/open_manipulator_x_master_slave")
-ament_cmake_symlink_install_files("/home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/open_manipulator_x_master_slave")
+# install(FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/open_manipulator_x_master_slave")
+ament_cmake_symlink_install_files("/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/open_manipulator_x_master_slave")
 
-# install(FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/open_manipulator_x_master_slave")
-ament_cmake_symlink_install_files("/home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/open_manipulator_x_master_slave")
+# install(FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/open_manipulator_x_master_slave")
+ament_cmake_symlink_install_files("/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/open_manipulator_x_master_slave")
 
-# install(FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/open_manipulator_x_master_slave")
-ament_cmake_symlink_install_files("/home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/open_manipulator_x_master_slave")
+# install(FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/open_manipulator_x_master_slave")
+ament_cmake_symlink_install_files("/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/open_manipulator_x_master_slave")
 
-# install(FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/open_manipulator_x_master_slave")
-ament_cmake_symlink_install_files("/home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/open_manipulator_x_master_slave")
+# install(FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/open_manipulator_x_master_slave")
+ament_cmake_symlink_install_files("/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/open_manipulator_x_master_slave")
 
-# install(FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_index/share/ament_index/resource_index/packages/open_manipulator_x_master_slave" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_index/share/ament_index/resource_index/packages/open_manipulator_x_master_slave" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_index/share/ament_index/resource_index/packages/open_manipulator_x_master_slave" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_index/share/ament_index/resource_index/packages/open_manipulator_x_master_slave" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/open_manipulator_x_master_slave/cmake")
-ament_cmake_symlink_install_files("/home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/open_manipulator_x_master_slave/cmake")
+# install(FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/open_manipulator_x_master_slave/cmake")
+ament_cmake_symlink_install_files("/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/open_manipulator_x_master_slave/cmake")
 
-# install(FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/open_manipulator_x_master_slave/cmake")
-ament_cmake_symlink_install_files("/home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/open_manipulator_x_master_slave/cmake")
+# install(FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/open_manipulator_x_master_slave/cmake")
+ament_cmake_symlink_install_files("/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/open_manipulator_x_master_slave/cmake")
 
-# install(FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_core/open_manipulator_x_master_slaveConfig.cmake" "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_core/open_manipulator_x_master_slaveConfig-version.cmake" "DESTINATION" "share/open_manipulator_x_master_slave/cmake")
-ament_cmake_symlink_install_files("/home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_core/open_manipulator_x_master_slaveConfig.cmake" "/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/ament_cmake_core/open_manipulator_x_master_slaveConfig-version.cmake" "DESTINATION" "share/open_manipulator_x_master_slave/cmake")
+# install(FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_core/open_manipulator_x_master_slaveConfig.cmake" "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_core/open_manipulator_x_master_slaveConfig-version.cmake" "DESTINATION" "share/open_manipulator_x_master_slave/cmake")
+ament_cmake_symlink_install_files("/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_core/open_manipulator_x_master_slaveConfig.cmake" "/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_core/open_manipulator_x_master_slaveConfig-version.cmake" "DESTINATION" "share/open_manipulator_x_master_slave/cmake")
 
-# install(FILES "/home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave/package.xml" "DESTINATION" "share/open_manipulator_x_master_slave")
-ament_cmake_symlink_install_files("/home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave/package.xml" "DESTINATION" "share/open_manipulator_x_master_slave")
+# install(FILES "/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/package.xml" "DESTINATION" "share/open_manipulator_x_master_slave")
+ament_cmake_symlink_install_files("/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave" FILES "/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/package.xml" "DESTINATION" "share/open_manipulator_x_master_slave")

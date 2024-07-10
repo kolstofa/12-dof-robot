@@ -1,1 +1,1 @@
-/home/x/Desktop/workspace/omx_tester/build/dynamixel_sdk_custom_interfaces/rosidl_cmake/srv/GetPosition_Response.msg
+/home/x/Desktop/workspace/12-dof-robot/build/dynamixel_sdk_custom_interfaces/rosidl_cmake/srv/GetPosition_Response.msg

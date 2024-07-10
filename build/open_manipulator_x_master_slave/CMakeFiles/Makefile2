@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave
+CMAKE_SOURCE_DIR = /home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave
+CMAKE_BINARY_DIR = /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -83,14 +83,14 @@ clean: CMakeFiles/open_manipulator_x_master_slave.dir/clean
 CMakeFiles/uninstall.dir/all: CMakeFiles/open_manipulator_x_master_slave_uninstall.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/CMakeFiles --progress-num= "Built target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/CMakeFiles --progress-num= "Built target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/CMakeFiles 0
 .PHONY : CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -109,14 +109,14 @@ CMakeFiles/uninstall.dir/clean:
 CMakeFiles/open_manipulator_x_master_slave_uninstall.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/open_manipulator_x_master_slave_uninstall.dir/build.make CMakeFiles/open_manipulator_x_master_slave_uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/open_manipulator_x_master_slave_uninstall.dir/build.make CMakeFiles/open_manipulator_x_master_slave_uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/CMakeFiles --progress-num= "Built target open_manipulator_x_master_slave_uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/CMakeFiles --progress-num= "Built target open_manipulator_x_master_slave_uninstall"
 .PHONY : CMakeFiles/open_manipulator_x_master_slave_uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/open_manipulator_x_master_slave_uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/open_manipulator_x_master_slave_uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/CMakeFiles 0
 .PHONY : CMakeFiles/open_manipulator_x_master_slave_uninstall.dir/rule
 
 # Convenience name for target.
@@ -135,14 +135,14 @@ CMakeFiles/open_manipulator_x_master_slave_uninstall.dir/clean:
 CMakeFiles/open_manipulator_x_master_slave.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/open_manipulator_x_master_slave.dir/build.make CMakeFiles/open_manipulator_x_master_slave.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/open_manipulator_x_master_slave.dir/build.make CMakeFiles/open_manipulator_x_master_slave.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/CMakeFiles --progress-num=1,2 "Built target open_manipulator_x_master_slave"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/CMakeFiles --progress-num=1,2 "Built target open_manipulator_x_master_slave"
 .PHONY : CMakeFiles/open_manipulator_x_master_slave.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/open_manipulator_x_master_slave.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/open_manipulator_x_master_slave.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_master_slave/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/CMakeFiles 0
 .PHONY : CMakeFiles/open_manipulator_x_master_slave.dir/rule
 
 # Convenience name for target.

@@ -1,1 +1,1 @@
-/home/x/Desktop/workspace/omx_tester/build/open_manipulator_x_libs/ament_cmake_core/open_manipulator_x_libsConfig-version.cmake
+/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_libs/ament_cmake_core/open_manipulator_x_libsConfig-version.cmake

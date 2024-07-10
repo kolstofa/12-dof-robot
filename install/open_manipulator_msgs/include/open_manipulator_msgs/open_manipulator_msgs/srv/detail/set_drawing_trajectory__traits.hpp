@@ -1,1 +1,1 @@
-/home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_drawing_trajectory__traits.hpp
+/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_drawing_trajectory__traits.hpp

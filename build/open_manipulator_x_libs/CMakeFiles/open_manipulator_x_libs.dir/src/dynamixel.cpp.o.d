@@ -1,9 +1,9 @@
 CMakeFiles/open_manipulator_x_libs.dir/src/dynamixel.cpp.o: \
- /home/x/Desktop/workspace/omx_tester/src/open_manipulator/open_manipulator_x_libs/src/dynamixel.cpp \
+ /home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_libs/src/dynamixel.cpp \
  /usr/include/stdc-predef.h \
- /home/x/Desktop/workspace/omx_tester/src/open_manipulator/open_manipulator_x_libs/src/../include/open_manipulator_x_libs/dynamixel.hpp \
- /home/x/Desktop/workspace/omx_tester/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator.h \
- /home/x/Desktop/workspace/omx_tester/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_common.h \
+ /home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_libs/src/../include/open_manipulator_x_libs/dynamixel.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_common.h \
  /usr/include/unistd.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -489,19 +489,19 @@ CMakeFiles/open_manipulator_x_libs.dir/src/dynamixel.cpp.o: \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/bits/list.tcc /usr/include/eigen3/Eigen/LU \
  /usr/include/c++/11/math.h \
- /home/x/Desktop/workspace/omx_tester/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_math.h \
- /home/x/Desktop/workspace/omx_tester/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_log.h \
- /home/x/Desktop/workspace/omx_tester/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_manager.h \
- /home/x/Desktop/workspace/omx_tester/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_trajectory_generator.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_math.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_log.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_manager.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_trajectory_generator.h \
  /usr/include/eigen3/Eigen/QR \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_workbench.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_driver.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_tool.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_item.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/dynamixel_sdk.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/group_bulk_read.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/port_handler.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/packet_handler.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/group_bulk_write.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/group_sync_read.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/group_sync_write.h
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_workbench.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_driver.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_tool.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_item.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/dynamixel_sdk.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/group_bulk_read.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/port_handler.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/packet_handler.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/group_bulk_write.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/group_sync_read.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/group_sync_write.h

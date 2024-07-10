@@ -1,1 +1,1 @@
-/home/x/Desktop/workspace/omx_tester/build/dynamixel_workbench_toolbox/ament_cmake_environment_hooks/local_setup.zsh
+/home/x/Desktop/workspace/12-dof-robot/build/dynamixel_workbench_toolbox/ament_cmake_environment_hooks/local_setup.zsh

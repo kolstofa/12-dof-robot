@@ -1,1 +1,1 @@
-/home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/ament_cmake_core/open_manipulator_msgsConfig.cmake
+/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/ament_cmake_core/open_manipulator_msgsConfig.cmake

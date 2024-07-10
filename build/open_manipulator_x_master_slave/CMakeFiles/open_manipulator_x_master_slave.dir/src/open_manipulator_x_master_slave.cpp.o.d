@@ -1,7 +1,7 @@
 CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.o: \
- /home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp \
+ /home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp \
  /usr/include/stdc-predef.h \
- /home/x/Desktop/workspace/omx_tester/src/open_manipulator_applications/open_manipulator_x_master_slave/include/open_manipulator_x_master_slave/open_manipulator_x_master_slave.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/../include/open_manipulator_x_master_slave/open_manipulator_x_master_slave.hpp \
  /usr/include/termios.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -619,16 +619,16 @@ CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_sla
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/set_joint_position.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_joint_position__struct.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/msg/detail/joint_position__struct.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_joint_position__builder.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_joint_position__traits.hpp \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/msg/detail/joint_position__traits.hpp \
- /home/x/Desktop/workspace/omx_tester/install/open_manipulator_x_libs/include/open_manipulator_x_libs/open_manipulator_x.hpp \
- /home/x/Desktop/workspace/omx_tester/install/open_manipulator_x_libs/include/open_manipulator_x_libs/dynamixel.hpp \
- /home/x/Desktop/workspace/omx_tester/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator.h \
- /home/x/Desktop/workspace/omx_tester/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_common.h \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/set_joint_position.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_joint_position__struct.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/msg/detail/joint_position__struct.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_joint_position__builder.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/srv/detail/set_joint_position__traits.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/msg/detail/joint_position__traits.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/include/open_manipulator_x_libs/open_manipulator_x.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/include/open_manipulator_x_libs/dynamixel.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_common.h \
  /usr/include/eigen3/Eigen/Eigen /usr/include/eigen3/Eigen/Dense \
  /usr/include/eigen3/Eigen/Core \
  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
@@ -903,21 +903,21 @@ CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_sla
  /usr/include/eigen3/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h \
  /usr/include/eigen3/Eigen/src/IterativeLinearSolvers/IncompleteCholesky.h \
  /usr/include/eigen3/Eigen/LU /usr/include/c++/11/math.h \
- /home/x/Desktop/workspace/omx_tester/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_math.h \
- /home/x/Desktop/workspace/omx_tester/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_log.h \
- /home/x/Desktop/workspace/omx_tester/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_manager.h \
- /home/x/Desktop/workspace/omx_tester/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_trajectory_generator.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_math.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_log.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_manager.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_trajectory_generator.h \
  /usr/include/eigen3/Eigen/QR \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_workbench.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_driver.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_tool.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_item.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/dynamixel_sdk.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/group_bulk_read.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/port_handler.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/packet_handler.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/group_bulk_write.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/group_sync_read.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/group_sync_write.h \
- /home/x/Desktop/workspace/omx_tester/install/open_manipulator_x_libs/include/open_manipulator_x_libs/custom_trajectory.hpp \
- /home/x/Desktop/workspace/omx_tester/install/open_manipulator_x_libs/include/open_manipulator_x_libs/kinematics.hpp
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_workbench.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_driver.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_tool.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_item.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/dynamixel_sdk.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/group_bulk_read.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/port_handler.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/packet_handler.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/group_bulk_write.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/group_sync_read.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/group_sync_write.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/include/open_manipulator_x_libs/custom_trajectory.hpp \
+ /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/include/open_manipulator_x_libs/kinematics.hpp

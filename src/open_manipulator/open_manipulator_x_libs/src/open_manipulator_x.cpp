@@ -15,6 +15,7 @@
 // Author: Darby Lim, Hye-Jong KIM, Ryan Shim, Yong-Ho Na
 
 #include "../include/open_manipulator_x_libs/open_manipulator_x.hpp"
+#include "rclcpp/rclcpp.hpp"
 
 OpenManipulatorX::OpenManipulatorX() {}
 
@@ -29,13 +30,13 @@ OpenManipulatorX::~OpenManipulatorX()
 // left
 void OpenManipulatorX::init_open_manipulator_x(bool sim, STRING usb_port, STRING baud_rate, float control_loop_time, std::vector<uint8_t> dxl_id)
 {
-  printf("2\n");
+  RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "init_open_manipulator_x start "); 
   /*****************************************************************************
     ** Initialize Manipulator Parameter
     *****************************************************************************/
   // May 9 by Hojin
   // Left Arm
-  addWorld("world01",   // world name
+     addWorld("world01",   // world name
           "joint01"); // child name
 
   addJoint("joint01",  // my name
@@ -149,15 +150,14 @@ void OpenManipulatorX::init_open_manipulator_x(bool sim, STRING usb_port, STRING
                               2.2552871e-05, -3.1463634e-10,
                               1.7605306e-05),                                   // inertial tensor
           math::vector3(0.028 + 8.3720668e-03, 0.0246, -4.2836895e-07)          // COM
-          );
-          
+          );        
   /*****************************************************************************
   ** Initialize Kinematics 
   *****************************************************************************/
   kinematics_ = new kinematics::SolverCustomizedforOMChain();
 //  kinematics_ = new kinematics::SolverUsingCRAndSRPositionOnlyJacobian();
   addKinematics(kinematics_);
-
+  RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "kinematics_ complete"); 
   if(!sim)
   {
     /*****************************************************************************
@@ -165,7 +165,7 @@ void OpenManipulatorX::init_open_manipulator_x(bool sim, STRING usb_port, STRING
     *****************************************************************************/
     // actuator_ = new dynamixel::JointDynamixel();
     actuator_ = new dynamixel::JointDynamixelProfileControl(control_loop_time);
-    
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "initialize joint actuator : 1"); 
     // Set communication arguments
     STRING dxl_comm_arg[2] = {usb_port, baud_rate};
     void *p_dxl_comm_arg = &dxl_comm_arg;
@@ -179,17 +179,17 @@ void OpenManipulatorX::init_open_manipulator_x(bool sim, STRING usb_port, STRING
     jointDxlId.push_back(dxl_id[4]);
     jointDxlId.push_back(dxl_id[5]);
     addJointActuator(JOINT_DYNAMIXEL, actuator_, jointDxlId, p_dxl_comm_arg);
-
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "initialize joint actuator : 2"); 
     // Set joint actuator control mode
     STRING joint_dxl_mode_arg = "position_mode";
     void *p_joint_dxl_mode_arg = &joint_dxl_mode_arg;
     setJointActuatorMode(JOINT_DYNAMIXEL, jointDxlId, p_joint_dxl_mode_arg);
-
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "initialize joint actuator : 3"); 
     /*****************************************************************************
     ** Initialize Tool Actuator
     *****************************************************************************/
     tool_ = new dynamixel::GripperDynamixel();
-
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "initialize tool actuator : 1"); 
     uint8_t gripperDxlId = dxl_id[6];
     addToolActuator(TOOL_DYNAMIXEL, tool_, gripperDxlId, p_dxl_comm_arg);
 
@@ -211,10 +211,13 @@ void OpenManipulatorX::init_open_manipulator_x(bool sim, STRING usb_port, STRING
 
     // Enable All Actuators 
     enableAllActuator();
-
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "initialize tool actuator : 2"); 
     // Receive current angles from all actuators 
     receiveAllJointActuatorValue();
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "receiveAllJointActuatorValue : complete"); 
     receiveAllToolActuatorValue();
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "receiveAllToolActuatorValue : complete"); 
+    
   }
 
   /*****************************************************************************

@@ -1,1 +1,1 @@
-/home/x/Desktop/workspace/omx_tester/build/dynamixel_sdk_custom_interfaces/ament_cmake_environment_hooks/pythonpath.sh
+/home/x/Desktop/workspace/12-dof-robot/build/dynamixel_sdk_custom_interfaces/ament_cmake_environment_hooks/pythonpath.sh

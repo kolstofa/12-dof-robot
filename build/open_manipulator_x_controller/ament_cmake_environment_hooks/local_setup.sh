@@ -2,7 +2,7 @@
 
 # since this file is sourced use either the provided AMENT_CURRENT_PREFIX
 # or fall back to the destination set at configure time
-: ${AMENT_CURRENT_PREFIX:="/home/x/Desktop/workspace/omx_tester/install/open_manipulator_x_controller"}
+: ${AMENT_CURRENT_PREFIX:="/home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_controller"}
 if [ ! -d "$AMENT_CURRENT_PREFIX" ]; then
   if [ -z "$COLCON_CURRENT_PREFIX" ]; then
     echo "The compile time prefix path '$AMENT_CURRENT_PREFIX' doesn't " \

@@ -1,1 +1,1 @@
-/home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_log.h
+/home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_log.h

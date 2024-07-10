@@ -1,1 +1,1 @@
-/home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/ament_cmake_environment_hooks/pythonpath.sh
+/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/ament_cmake_environment_hooks/pythonpath.sh

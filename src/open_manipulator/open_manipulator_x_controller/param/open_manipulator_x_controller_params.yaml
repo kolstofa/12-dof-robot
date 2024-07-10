@@ -2,3 +2,11 @@
   ros__parameters:
     sim: false
     control_period: 0.010
+    service_call_period: 0.010
+    # joint01_id: 21
+    # joint02_id: 22
+    # joint03_id: 23
+    # joint04_id: 24
+    # joint05_id: 25
+    # joint06_id: 26
+    # gripper01_id: 27

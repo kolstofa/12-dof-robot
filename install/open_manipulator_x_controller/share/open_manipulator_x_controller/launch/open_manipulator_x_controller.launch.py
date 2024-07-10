@@ -1,0 +1,1 @@
+/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/launch/open_manipulator_x_controller.launch.py

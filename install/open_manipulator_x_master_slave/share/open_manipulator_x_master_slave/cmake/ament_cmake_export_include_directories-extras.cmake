@@ -1,0 +1,1 @@
+/home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_x_master_slave/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake

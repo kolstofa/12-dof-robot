@@ -1,7 +1,7 @@
 CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_log.cpp.o: \
- /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_log.cpp \
+ /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/robotis_manipulator_log.cpp \
  /usr/include/stdc-predef.h \
- /home/x/Desktop/workspace/omx_tester/src/robotis_manipulator/src/robotis_manipulator/../../include/robotis_manipulator/robotis_manipulator_log.h \
+ /home/x/Desktop/workspace/12-dof-robot/src/robotis_manipulator/src/robotis_manipulator/../../include/robotis_manipulator/robotis_manipulator_log.h \
  /usr/include/unistd.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

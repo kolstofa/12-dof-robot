@@ -1,9 +1,9 @@
 CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_workbench.cpp.o: \
- /home/x/Desktop/workspace/omx_tester/src/dynamixel-workbench/dynamixel_workbench_toolbox/src/dynamixel_workbench_toolbox/dynamixel_workbench.cpp \
+ /home/x/Desktop/workspace/12-dof-robot/src/dynamixel-workbench/dynamixel_workbench_toolbox/src/dynamixel_workbench_toolbox/dynamixel_workbench.cpp \
  /usr/include/stdc-predef.h \
- /home/x/Desktop/workspace/omx_tester/src/dynamixel-workbench/dynamixel_workbench_toolbox/src/dynamixel_workbench_toolbox/../../include/dynamixel_workbench_toolbox/dynamixel_workbench.h \
- /home/x/Desktop/workspace/omx_tester/src/dynamixel-workbench/dynamixel_workbench_toolbox/src/dynamixel_workbench_toolbox/../../include/dynamixel_workbench_toolbox/dynamixel_driver.h \
- /home/x/Desktop/workspace/omx_tester/src/dynamixel-workbench/dynamixel_workbench_toolbox/src/dynamixel_workbench_toolbox/../../include/dynamixel_workbench_toolbox/dynamixel_tool.h \
+ /home/x/Desktop/workspace/12-dof-robot/src/dynamixel-workbench/dynamixel_workbench_toolbox/src/dynamixel_workbench_toolbox/../../include/dynamixel_workbench_toolbox/dynamixel_workbench.h \
+ /home/x/Desktop/workspace/12-dof-robot/src/dynamixel-workbench/dynamixel_workbench_toolbox/src/dynamixel_workbench_toolbox/../../include/dynamixel_workbench_toolbox/dynamixel_driver.h \
+ /home/x/Desktop/workspace/12-dof-robot/src/dynamixel-workbench/dynamixel_workbench_toolbox/src/dynamixel_workbench_toolbox/../../include/dynamixel_workbench_toolbox/dynamixel_tool.h \
  /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -31,7 +31,7 @@ CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynam
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /home/x/Desktop/workspace/omx_tester/src/dynamixel-workbench/dynamixel_workbench_toolbox/src/dynamixel_workbench_toolbox/../../include/dynamixel_workbench_toolbox/dynamixel_item.h \
+ /home/x/Desktop/workspace/12-dof-robot/src/dynamixel-workbench/dynamixel_workbench_toolbox/src/dynamixel_workbench_toolbox/../../include/dynamixel_workbench_toolbox/dynamixel_item.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
@@ -43,8 +43,8 @@ CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynam
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/dynamixel_sdk.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/group_bulk_read.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/dynamixel_sdk.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/group_bulk_read.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -91,8 +91,8 @@ CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynam
  /usr/include/c++/11/bits/functional_hash.h \
  /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/port_handler.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/packet_handler.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/group_bulk_write.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/group_sync_read.h \
- /home/x/Desktop/workspace/omx_tester/install/dynamixel_sdk/include/dynamixel_sdk/group_sync_write.h
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/port_handler.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/packet_handler.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/group_bulk_write.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/group_sync_read.h \
+ /home/x/Desktop/workspace/12-dof-robot/install/dynamixel_sdk/include/dynamixel_sdk/group_sync_write.h

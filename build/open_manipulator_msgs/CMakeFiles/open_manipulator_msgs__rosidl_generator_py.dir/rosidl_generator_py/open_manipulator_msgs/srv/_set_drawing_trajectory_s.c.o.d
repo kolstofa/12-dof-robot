@@ -1,5 +1,5 @@
 CMakeFiles/open_manipulator_msgs__rosidl_generator_py.dir/rosidl_generator_py/open_manipulator_msgs/srv/_set_drawing_trajectory_s.c.o: \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_py/open_manipulator_msgs/srv/_set_drawing_trajectory_s.c \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_py/open_manipulator_msgs/srv/_set_drawing_trajectory_s.c \
  /usr/include/stdc-predef.h /usr/include/python3.10/Python.h \
  /usr/include/python3.10/patchlevel.h /usr/include/python3.10/pyconfig.h \
  /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h \
@@ -207,10 +207,10 @@ CMakeFiles/open_manipulator_msgs__rosidl_generator_py.dir/rosidl_generator_py/op
  /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
  /usr/include/python3.10/numpy/__multiarray_api.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_c/open_manipulator_msgs/srv/detail/set_drawing_trajectory__struct.h \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_c/open_manipulator_msgs/srv/detail/set_drawing_trajectory__struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_c/open_manipulator_msgs/srv/detail/set_drawing_trajectory__functions.h \
- /home/x/Desktop/workspace/omx_tester/build/open_manipulator_msgs/rosidl_generator_c/open_manipulator_msgs/msg/rosidl_generator_c__visibility_control.h \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_c/open_manipulator_msgs/srv/detail/set_drawing_trajectory__functions.h \
+ /home/x/Desktop/workspace/12-dof-robot/build/open_manipulator_msgs/rosidl_generator_c/open_manipulator_msgs/msg/rosidl_generator_c__visibility_control.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
