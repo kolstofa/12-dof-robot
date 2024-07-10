@@ -1,9 +1,26 @@
-﻿//#include "open_manipulator_x_master_slave/open_manipulator_x_master_slave.hpp"
+﻿/*******************************************************************************
+* Copyright 2019 ROBOTIS CO., LTD.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*     http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*******************************************************************************/
+
+/* Authors: Darby Lim, Hye-Jong KIM, Ryan Shim, Yong-Ho Na */
+
+//#include "open_manipulator_x_master_slave/open_manipulator_x_master_slave.hpp"
 #include "../include/open_manipulator_x_master_slave/open_manipulator_x_master_slave.hpp"
-#include <iostream>
-#include <iomanip>
 
 using namespace std::chrono_literals;
+int loop_counter=0;
 
 OpenManipulatorXMasterSlave::OpenManipulatorXMasterSlave(std::string usb_port, std::string baud_rate)
 : Node("open_manipulator_x_master_slave"){
@@ -18,11 +35,11 @@ OpenManipulatorXMasterSlave::OpenManipulatorXMasterSlave(std::string usb_port, s
   goal_joint_position_.resize(NUM_OF_JOINT);
   goal_tool_position_ = 0.0;
 
+  // dxl_id_={1,2,3,4,5,6,7};
   open_manipulator_x_.init_open_manipulator_x(false, usb_port, baud_rate, service_call_period_, dxl_id_);
   open_manipulator_x_.disableAllActuator();
 
   mode_state_ = MASTER_SLAVE_MODE;
-  
   buffer_index_ = 0;
   
   this->disable_waiting_for_enter();
@@ -31,10 +48,10 @@ OpenManipulatorXMasterSlave::OpenManipulatorXMasterSlave(std::string usb_port, s
   ** Initialise ROS clients
   ************************************************************/
   goal_joint_space_path_client_ = this->create_client<open_manipulator_msgs::srv::SetJointPosition>(
-    "goal_joint_space_path");
+    "open_manipulator_x/goal_joint_space_path");
   goal_tool_control_client_ = this->create_client<open_manipulator_msgs::srv::SetJointPosition>(
-    "goal_tool_control");
-  
+    "open_manipulator_x/goal_tool_control");
+
   /************************************************************
   ** Initialise ROS timers
   ************************************************************/
@@ -68,8 +85,7 @@ void OpenManipulatorXMasterSlave::init_parameters()
 
   // Get parameter from yaml
   int dxl_id_1, dxl_id_2, dxl_id_3, dxl_id_4, dxl_id_5, dxl_id_6, dxl_id_7;
-  service_call_period_ = 0.001f;
-  this->get_parameter_or<double>("service_call_period", service_call_period_);
+  this->get_parameter_or<double>("service_call_period", 0.001f);
 
   this->get_parameter_or<int>("joint01_id", dxl_id_1, 1);
   this->get_parameter_or<int>("joint02_id", dxl_id_2, 2);
@@ -90,23 +106,53 @@ void OpenManipulatorXMasterSlave::init_parameters()
 /*****************************************************************************
 ** Callback functions for ROS clients
 *****************************************************************************/
-void OpenManipulatorXMasterSlave::set_goal() // songwoo
+void OpenManipulatorXMasterSlave::sync_open_manipulator_x(bool recorded_state){
+  RCLCPP_INFO(this->get_logger(), "Synchronizing OpenManipulator-X");
+  double sync_path_time = 1.0;
+
+  open_manipulator_x_.receiveAllJointActuatorValue();
+  open_manipulator_x_.receiveAllToolActuatorValue();
+
+  if (recorded_state) // move to first pose of recorded buffer
+  {
+    set_joint_space_path(sync_path_time, record_buffer_.at(buffer_index_).joint_angle);
+    set_tool_control(record_buffer_.at(buffer_index_).tool_position);
+  }
+  else // move to present master pose
+  {
+    set_joint_space_path(sync_path_time);
+    set_tool_control();
+  }
+  return;
+}
+
+void OpenManipulatorXMasterSlave::set_goal()
 {
   if(mode_state_ == MASTER_SLAVE_MODE){
-    set_joint_space_path(service_call_period_); // master 
+    set_joint_space_path(service_call_period_);
     set_tool_control();
+  }
+  else if(mode_state_ == START_RECORDING_TRAJECTORY_MODE){
+    set_joint_space_path(service_call_period_);
+    set_tool_control();
+
+    WaypointBuffer temp;
+    temp.joint_angle = goal_joint_position_;
+    temp.tool_position = goal_tool_position_;
+    record_buffer_.push_back(temp);
+  }
+  else if(mode_state_ == STOP_RECORDING_TRAJECTORY_MODE){}
+  else if(mode_state_ == PLAY_RECORDED_TRAJECTORY_MODE){
+    if(record_buffer_.size() > (unsigned)buffer_index_){
+      set_joint_space_path(service_call_period_, record_buffer_.at(buffer_index_).joint_angle);
+      set_tool_control(record_buffer_.at(buffer_index_).tool_position);
+      buffer_index_ ++;
+    }
   }
 }
 
 bool OpenManipulatorXMasterSlave::set_joint_space_path(double path_time, std::vector<double> joint_angle){
   auto request = std::make_shared<open_manipulator_msgs::srv::SetJointPosition::Request>();
-  while (!goal_joint_space_path_client_->wait_for_service(1s)) {
-    if (!rclcpp::ok()) {
-      RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Interrupted while waiting for the service. Exiting.");
-      return 0;
-    }
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "service not available, waiting again...");
-  }
 
   std::vector<std::string> joint_name = open_manipulator_x_.getManipulator()->getAllActiveJointComponentName();
   request->joint_position.joint_name = joint_name;
@@ -129,42 +175,28 @@ bool OpenManipulatorXMasterSlave::set_joint_space_path(double path_time, std::ve
   }
   //open_manipulator_x_.printManipulatorSetting();
   open_manipulator_x_.receiveAllJointActuatorValue();
-  // Debug joint value
-  for (size_t i = 0; i < joint_value.size(); ++i){
-    printf("joint_value[%zu] = %.3f\n", i, joint_value[i]);
-    //printf("joint_name[%zu] = %s\n", i, open_manipulator_x_);
-  }
+  // // Debug joint value
+  // for (size_t i = 0; i < joint_value.size(); ++i){
+  //   printf("joint_value[%zu] = %.3f\n", i, joint_value[i]);
+  //   //printf("joint_name[%zu] = %s\n", i, open_manipulator_x_);
+  //   }
   
   for (int i = 0; i < NUM_OF_JOINT; i ++){
-    if(open_manipulator_x_.getManipulator()->checkJointLimit(joint_name.at(i), joint_value.at(i))){
+    if(open_manipulator_x_.getManipulator()->checkJointLimit(joint_name.at(i), joint_value.at(i)))
       request->joint_position.position.push_back(joint_value.at(i));
-    }
-    else {
+    else
       request->joint_position.position.push_back(goal_joint_position_.at(i));
-    }
   }
-
-  // printf("*A*B*C*D*E*********** J1: %.3lf J2: %.3lf J3: %.3lf J4: %.3lf J5: %.3lf J6: %.3lf\n",
-  //           request->joint_position.position.at(0),
-  //           request->joint_position.position.at(1),
-  //           request->joint_position.position.at(2),
-  //           request->joint_position.position.at(3),
-  //           request->joint_position.position.at(4),
-  //           request->joint_position.position.at(5));
-
-  // ////
-  // // ?????????????????????????????????????????
-  // ////
 
   goal_joint_position_ = request->joint_position.position;
   request->path_time = path_time;
 
   //   // Debug: Print the joint positions being set
-  std::cout << "setting joint positions: ";
-  for (const auto& pos : goal_joint_position_) {
-      std::cout << pos << " ";
-  }
-  std::cout << std::endl;
+  // std::cout << "setting joint positions: ";
+  // for (const auto& pos : goal_joint_position_) {
+  //     std::cout << pos << " ";
+  // }
+  // std::cout << std::endl;
 
   using ServiceResponseFuture = rclcpp::Client<open_manipulator_msgs::srv::SetJointPosition>::SharedFuture;
   auto response_received_callback = [this](ServiceResponseFuture future){
@@ -172,56 +204,40 @@ bool OpenManipulatorXMasterSlave::set_joint_space_path(double path_time, std::ve
     return result->is_planned;
   };
 
-  //auto future_result = goal_joint_space_path_client_->async_send_request(request, response_received_callback);
-  auto future_result = goal_joint_space_path_client_->async_send_request(request);
+  auto future_result = goal_joint_space_path_client_->async_send_request(request, response_received_callback);
   return false;
 }
 
 bool OpenManipulatorXMasterSlave::set_tool_control(double set_goal_tool_position){
   double tool_value;
   
-  printf("set_goal_tool_position: %lf\n",set_goal_tool_position);
+  // printf("set_goal_tool_position: %lf\n",set_goal_tool_position);
   if(set_goal_tool_position < -0.1)
     tool_value = open_manipulator_x_.getAllToolValue().at(0).position;
   else
     tool_value = set_goal_tool_position;
-    
-  std::vector<std::string> joint_name = open_manipulator_x_.getManipulator()->getAllActiveJointComponentName();
-  printf("tool_value: %lf\n",open_manipulator_x_.getJointValue(joint_name.at(0)).position);
+  
+  // printf("tool_value: %lf\n",tool_value);
 
   auto request = std::make_shared<open_manipulator_msgs::srv::SetJointPosition::Request>();
-  while (!goal_tool_control_client_->wait_for_service(1s)) {
-    if (!rclcpp::ok()) {
-      RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Interrupted while waiting for the service. Exiting.");
-      return 0;
-    }
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "service not available, waiting again...");
-  }
-  // printf("1111\n");
   request->joint_position.joint_name.push_back("gripper01");
-  // printf("0\n");
+  
   if (open_manipulator_x_.getManipulator()->checkJointLimit("gripper01", tool_value))
     request->joint_position.position.push_back(tool_value);
   else
     request->joint_position.position.push_back(goal_tool_position_);
 
-  // goal_tool_position_ = request->joint_position.position.at(0);
-
+  goal_tool_position_ = request->joint_position.position.at(0);
   // Debug: Print the tool position being set
   // std::cout << "setting tool position: " << goal_tool_position_ << std::endl;
-  // printf("1\n");
-  // using ServiceResponseFuture = rclcpp::Client<open_manipulator_msgs::srv::SetJointPosition>::SharedFuture;
-  // printf("2 \n");
-  // auto response_received_callback = [this](ServiceResponseFuture future) 
-  // {
-  //   auto result = future.get();
-  //   return result->is_planned;
-  // };
-  printf("send request goal_tool_control_client_ \n");
-
-  // auto future_result = goal_tool_control_client_->async_send_request(request, response_received_callback);
-  auto future_result = goal_tool_control_client_->async_send_request(request);
-  // printf("future_result : %d \n", future_result.get()->is_planned);
+  
+  using ServiceResponseFuture = rclcpp::Client<open_manipulator_msgs::srv::SetJointPosition>::SharedFuture;
+  auto response_received_callback = [this](ServiceResponseFuture future) 
+  {
+    auto result = future.get();
+    return result->is_planned;
+  };
+  auto future_result = goal_tool_control_client_->async_send_request(request, response_received_callback);
   return false;
 }
 
@@ -238,9 +254,36 @@ void OpenManipulatorXMasterSlave::update_callback()
   // for (size_t i = 0; i < dxl_id_.size(); ++i){
   //   std::cout << "Element " << i << ": " << static_cast<int>(dxl_id_[i]) << std::endl;
   // }
+  printf("\n=====loop counter: %d=====\n",loop_counter); loop_counter++;
   
-  
+  char ch = std::getchar();
+  if (ch=='1' || ch=='2' || ch=='3' || ch=='4') this->set_mode_state(ch);
   this->set_goal();
+}
+
+void OpenManipulatorXMasterSlave::set_mode_state(char ch)
+{
+  if (ch == '1')
+  {
+    sync_open_manipulator_x(false);
+    mode_state_ = MASTER_SLAVE_MODE;
+  }
+  else if (ch == '2')
+  {
+    sync_open_manipulator_x(false);
+    record_buffer_.clear();
+    mode_state_ = START_RECORDING_TRAJECTORY_MODE;
+  }
+  else if (ch == '3')
+  {
+    mode_state_ = STOP_RECORDING_TRAJECTORY_MODE;
+  }
+  else if (ch == '4')
+  {
+    buffer_index_ = 0;
+    if (record_buffer_.size()) sync_open_manipulator_x(true);
+    mode_state_ = PLAY_RECORDED_TRAJECTORY_MODE;
+  }
 }
 
 /********************************************************************************
@@ -316,12 +359,19 @@ void OpenManipulatorXMasterSlave::disable_waiting_for_enter()
 int main(int argc, char **argv)
 {
   rclcpp::init(argc, argv);
+
   std::string usb_port = "/dev/ttyUSB1";
   std::string baud_rate = "57600";
 
-  // printf("service_call_period: %lf", this service_call_period);
+  if (argc == 3)
+  {
+    usb_port = argv[1];
+    baud_rate = argv[2];
+    printf("port_name and baud_rate are set to %s, %s \n", usb_port.c_str(), baud_rate.c_str());
+  }
+  else
+    printf("port_name and baud_rate are set to %s, %s \n", usb_port.c_str(), baud_rate.c_str());
 
-  printf("port_name and baud_rate are set to %s, %s \n", usb_port.c_str(), baud_rate.c_str());
   rclcpp::spin(std::make_shared<OpenManipulatorXMasterSlave>(usb_port, baud_rate));
   rclcpp::shutdown();
 
