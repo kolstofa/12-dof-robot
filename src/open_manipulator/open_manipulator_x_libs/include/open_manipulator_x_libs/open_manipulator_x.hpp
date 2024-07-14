@@ -51,8 +51,7 @@ class OpenManipulatorX : public robotis_manipulator::RobotisManipulator
 
  private:
   robotis_manipulator::Kinematics *kinematics_;
-  robotis_manipulator::JointActuator *actuator_1;
-  robotis_manipulator::JointActuator *actuator_2;
+  robotis_manipulator::JointActuator *actuator_;
   robotis_manipulator::ToolActuator *tool_1;
   robotis_manipulator::ToolActuator *tool_2;
   robotis_manipulator::CustomTaskTrajectory *custom_trajectory_[CUSTOM_TRAJECTORY_SIZE];

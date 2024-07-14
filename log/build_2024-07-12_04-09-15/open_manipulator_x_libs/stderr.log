@@ -1,0 +1,8 @@
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_libs/src/open_manipulator_x.cpp:[m[K In member function ‘[01m[Kvoid OpenManipulatorX::process_open_manipulator_x(double)[m[K’:
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_libs/src/open_manipulator_x.cpp:374:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_tool_value[m[K’ was not declared in this scope; did you mean ‘[01m[Kgoal_joint_value[m[K’?
+  374 |   if([01;31m[Kgoal_tool_value[m[K.size() != 0) sendAllToolActuatorValue(goal_tool_value);
+      |      [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |      [32m[Kgoal_joint_value[m[K
+gmake[2]: *** [CMakeFiles/open_manipulator_x_libs.dir/build.make:118: CMakeFiles/open_manipulator_x_libs.dir/src/open_manipulator_x.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/open_manipulator_x_libs.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

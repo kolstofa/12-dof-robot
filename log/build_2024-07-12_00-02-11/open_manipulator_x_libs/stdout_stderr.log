@@ -1,0 +1,37 @@
+[35m[1mConsolidate compiler generated dependencies of target open_manipulator_x_libs[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_libs.dir/src/open_manipulator_x.cpp.o[0m
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_libs/src/open_manipulator_x.cpp:[m[K In member function ‘[01m[Kvoid OpenManipulatorX::init_open_manipulator_x(bool, STRING, STRING, float, std::vector<unsigned char>)[m[K’:
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_libs/src/open_manipulator_x.cpp:336:14:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 2 has type ‘[01m[Kstd::vector<robotis_manipulator::_Point>[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  336 |     printf("[01;35m[K%d[m[K", result_vector1);
+      |             [01;35m[K~^[m[K
+      |              [01;35m[K|[m[K
+      |              [01;35m[Kint[m[K
+[ 40%] [32m[1mLinking CXX shared library libopen_manipulator_x_libs.so[0m
+[100%] Built target open_manipulator_x_libs
+-- Install configuration: "Debug"
+-- Execute custom install script
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/lib/libopen_manipulator_x_libs.so
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/include//open_manipulator_x_libs/custom_trajectory.hpp
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/include//open_manipulator_x_libs/dynamixel.hpp
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/include//open_manipulator_x_libs/kinematics.hpp
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/include//open_manipulator_x_libs/open_manipulator_x.hpp
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/share/open_manipulator_x_libs/environment/library_path.sh
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/share/open_manipulator_x_libs/environment/library_path.dsv
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/share/ament_index/resource_index/package_run_dependencies/open_manipulator_x_libs
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/share/ament_index/resource_index/parent_prefix_path/open_manipulator_x_libs
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/share/open_manipulator_x_libs/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/share/open_manipulator_x_libs/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/share/open_manipulator_x_libs/environment/path.sh
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/share/open_manipulator_x_libs/environment/path.dsv
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/share/open_manipulator_x_libs/local_setup.bash
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/share/open_manipulator_x_libs/local_setup.sh
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/share/open_manipulator_x_libs/local_setup.zsh
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/share/open_manipulator_x_libs/local_setup.dsv
+-- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/share/open_manipulator_x_libs/package.dsv
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/share/ament_index/resource_index/packages/open_manipulator_x_libs
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/share/open_manipulator_x_libs/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/share/open_manipulator_x_libs/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/share/open_manipulator_x_libs/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/share/open_manipulator_x_libs/cmake/open_manipulator_x_libsConfig.cmake
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/share/open_manipulator_x_libs/cmake/open_manipulator_x_libsConfig-version.cmake
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_libs/share/open_manipulator_x_libs/package.xml

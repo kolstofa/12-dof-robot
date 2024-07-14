@@ -20,6 +20,11 @@
 using namespace std::placeholders;
 using namespace std::chrono_literals;
 
+// added by songwoo
+dynamixel::PacketHandler *packetHandler = dynamixel::PacketHandler::getPacketHandler(2.0);
+dynamixel::PortHandler *portHandler = dynamixel::PortHandler::getPortHandler("/dev/ttyUSB0");
+uint8_t dxl_error = 0;                          // Dynamixel error
+
 namespace open_manipulator_x_controller
 {
 OpenManipulatorXController::OpenManipulatorXController(std::string usb_port, std::string baud_rate)
@@ -43,6 +48,7 @@ OpenManipulatorXController::OpenManipulatorXController(std::string usb_port, std
   dxl_id_.push_back(26);
   dxl_id_.push_back(27);
   open_manipulator_x_.init_open_manipulator_x(false, usb_port, baud_rate, control_period_);
+  // open_manipulator_x_.disableAllActuator();
   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "init_open_manipulator_x complete "); 
 
   if (sim_ == false) RCLCPP_INFO(this->get_logger(), "Succeeded to Initialise OpenManipulator-X Controller");
@@ -57,12 +63,13 @@ OpenManipulatorXController::OpenManipulatorXController(std::string usb_port, std
   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "subscriber complete "); 
   init_server();
   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "init_server complete "); 
-
   /************************************************************
   ** Initialise ROS timers
-  ************************************************************/
+
+  ************************************************************/  
   process_timer_ = this->create_wall_timer(10ms, std::bind(&OpenManipulatorXController::process_callback, this));
   publish_timer_ = this->create_wall_timer(10ms, std::bind(&OpenManipulatorXController::publish_callback, this));  
+
 }
 
 OpenManipulatorXController::~OpenManipulatorXController()
@@ -84,21 +91,6 @@ void OpenManipulatorXController::init_parameters()
   sim_ = this->get_parameter("sim").as_bool();
   control_period_ = this->get_parameter("control_period").as_double();
 
-  // int dxl_id_1, dxl_id_2, dxl_id_3, dxl_id_4, dxl_id_5, dxl_id_6, dxl_id_7;
-  // this->get_parameter_or<int>("joint01_id", dxl_id_1, 21);
-  // this->get_parameter_or<int>("joint02_id", dxl_id_2, 22);
-  // this->get_parameter_or<int>("joint03_id", dxl_id_3, 23);
-  // this->get_parameter_or<int>("joint04_id", dxl_id_4, 24);
-  // this->get_parameter_or<int>("joint05_id", dxl_id_5, 25);
-  // this->get_parameter_or<int>("joint06_id", dxl_id_6, 26);
-  // this->get_parameter_or<int>("gripper01_id", dxl_id_7, 27);
-  // dxl_id_.push_back(dxl_id_1);
-  // dxl_id_.push_back(dxl_id_2);
-  // dxl_id_.push_back(dxl_id_3);
-  // dxl_id_.push_back(dxl_id_4);
-  // dxl_id_.push_back(dxl_id_5);
-  // dxl_id_.push_back(dxl_id_6);
-  // dxl_id_.push_back(dxl_id_7);
 }
 
 void OpenManipulatorXController::init_publisher()
@@ -171,20 +163,10 @@ void OpenManipulatorXController::goal_joint_space_path_callback(
   const std::shared_ptr<open_manipulator_msgs::srv::SetJointPosition::Request> req,
   const std::shared_ptr<open_manipulator_msgs::srv::SetJointPosition::Response> res)
 {
-  // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "receive goal_joint_space_path"); 
   std::vector <double> target_angle;
-  
-
-  // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "req->joint_position.joint_name.size() : %d", req->joint_position.joint_name.size()); 
-  // for (size_t i = 0; i < req->joint_position.position.size(); ++i){
-  //   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "joint_value[%zu] = %.3f\n", i, req->joint_position.position[i]);
-  //   //printf("joint_name[%zu] = %s\n", i, open_manipulator_x_);
-  // }
-  
   for (uint8_t i = 0; i < req->joint_position.joint_name.size(); i ++)
     target_angle.push_back(req->joint_position.position.at(i));
   
-  // open_manipulator_x_.makeJointTrajectoryFromPresentPosition(target_angle, req->path_time, open_manipulator_x_.getAllJointValue());
   open_manipulator_x_.makeJointTrajectory(target_angle, req->path_time, open_manipulator_x_.getAllJointValue());
   res->is_planned = true;
 }
@@ -304,8 +286,10 @@ void OpenManipulatorXController::goal_joint_space_path_from_present_callback(
 {
   std::vector <double> target_angle;
 
-  for(uint8_t i = 0; i < req->joint_position.joint_name.size(); i ++)
+  for(uint8_t i = 0; i < req->joint_position.joint_name.size(); i ++) {
     target_angle.push_back(req->joint_position.position.at(i));
+    printf("%f\n", target_angle.at(i));
+  }
 
   open_manipulator_x_.makeJointTrajectoryFromPresentPosition(target_angle, req->path_time);
 
@@ -370,14 +354,28 @@ void OpenManipulatorXController::goal_task_space_path_from_present_orientation_o
 void OpenManipulatorXController::goal_tool_control_callback(
   const std::shared_ptr<open_manipulator_msgs::srv::SetJointPosition::Request> req,
   const std::shared_ptr<open_manipulator_msgs::srv::SetJointPosition::Response> res)
-{ 
-  // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "receive goal_tool_control_callback"); 
-  //RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "req->joint_position.joint_name.size() : %d", req->joint_position.joint_name); 
-  open_manipulator_x_.makeToolTrajectory(req->joint_position.joint_name.at(0), req->joint_position.position.at(0));
-  // for (uint8_t i = 0; i < req->joint_position.joint_name.size(); i ++){
-  //   open_manipulator_x_.makeToolTrajectory(req->joint_position.joint_name.at(i), req->joint_position.position.at(i));
-  // }
+{
 
+  RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "%f",open_manipulator_x_.getToolValue("gripper01").position);
+  RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "%f",open_manipulator_x_.getToolValue("gripper02").position);
+  // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "%f",open_manipulator_x_.getAllToolPosition().at(0));
+  // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "%f",open_manipulator_x_.getAllToolPosition().at(1));
+
+  double x1 = req->joint_position.position.at(0);
+  double z1 = (x1 - 0.035) / 0.025;
+  double x1_res = z1*0.025-0.06;
+
+  double x2 = req->joint_position.position.at(1);
+  double z2 = (x2 - 0.035) / 0.025;
+  double x2_res = z2*0.025-0.06;
+  
+  // packetHandler->write1ByteTxRx(portHandler, 17, 64, 0);
+  // packetHandler->write1ByteTxRx(portHandler, 27, 64, 0);
+  
+  open_manipulator_x_.makeToolTrajectory(req->joint_position.joint_name.at(0), x1);; 
+  open_manipulator_x_.makeToolTrajectory(req->joint_position.joint_name.at(1), -x2);; 
+  // for (uint8_t i = 0; i < req->joint_position.joint_name.size(); i++)
+  //   open_manipulator_x_.makeToolTrajectory(req->joint_position.joint_name.at(i), req->joint_position.position.at(i));; 
   res->is_planned = true;
   return;
 }
@@ -512,6 +510,7 @@ void OpenManipulatorXController::publish_kinematics_pose()
     msg.pose.position.x = pose.position[0];
     msg.pose.position.y = pose.position[1];
     msg.pose.position.z = pose.position[2];
+    
     Eigen::Quaterniond orientation = math::convertRotationMatrixToQuaternion(pose.orientation);
     msg.pose.orientation.w = orientation.w();
     msg.pose.orientation.x = orientation.x();
@@ -578,12 +577,28 @@ void OpenManipulatorXController::publish_gazebo_command()
 *****************************************************************************/
 int main(int argc, char **argv)
 {
-  rclcpp::init(argc, argv);
+  // if (portHandler->openPort())
+  // {
+  //   printf("Succeeded to open the port!\n");
+  // }
+  // if (portHandler->setBaudRate(57600))
+  // {
+  //   printf("Succeeded to change the baudrate!\n");
+  // }
+  // Enable Dynamixel Torque
+  
+  // if (dxl_comm_result != COMM_SUCCESS)
+  // {
+  //   packetHandler->printTxRxResult(dxl_comm_result);
+  // }
 
   std::string usb_port = "/dev/ttyUSB0";
   std::string baud_rate = "57600";
+    // Open port
+  rclcpp::init(argc, argv);
+
+
   printf("port_name and baud_rate are set to %s, %s \n", usb_port.c_str(), baud_rate.c_str());
-  RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "incoming request : hellowrld "); 
   
   rclcpp::spin(std::make_shared<open_manipulator_x_controller::OpenManipulatorXController>(usb_port, baud_rate));
   rclcpp::shutdown();

@@ -1,0 +1,17 @@
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:[m[K In member function ‘[01m[Kvoid open_manipulator_x_controller::OpenManipulatorXController::init_publisher()[m[K’:
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:139:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kname[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  139 |   for (auto const & [01;35m[Kname[m[K:tools_name)
+      |                     [01;35m[K^~~~[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:[m[K In member function ‘[01m[Kvoid open_manipulator_x_controller::OpenManipulatorXController::goal_joint_space_path_callback(std::shared_ptr<open_manipulator_msgs::srv::SetJointPosition_Request_<std::allocator<void> > >, std::shared_ptr<open_manipulator_msgs::srv::SetJointPosition_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:189:16:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 2 has type ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  189 |   printf("1 : [01;35m[K%d[m[K\n", [32m[Kreq->joint_position.joint_name.size()[m[K);
+      |               [01;35m[K~^[m[K     [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                [01;35m[K|[m[K                                        [32m[K|[m[K
+      |                [01;35m[Kint[m[K                                      [32m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type {aka long unsigned int}[m[K
+      |               [32m[K%ld[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:190:16:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 2 has type ‘[01m[Kstd::vector<robotis_manipulator::_Point>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  190 |   printf("2 : [01;35m[K%d[m[K\n", [32m[Kopen_manipulator_x_.getAllActiveJointValue().size()[m[K);
+      |               [01;35m[K~^[m[K     [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                [01;35m[K|[m[K                                                      [32m[K|[m[K
+      |                [01;35m[Kint[m[K                                                    [32m[Kstd::vector<robotis_manipulator::_Point>::size_type {aka long unsigned int}[m[K
+      |               [32m[K%ld[m[K

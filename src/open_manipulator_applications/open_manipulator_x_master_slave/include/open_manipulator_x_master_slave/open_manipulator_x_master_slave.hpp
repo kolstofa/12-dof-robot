@@ -27,7 +27,8 @@
 #include "open_manipulator_msgs/srv/set_joint_position.hpp"
 #include "open_manipulator_x_libs/open_manipulator_x.hpp"
 
-#define NUM_OF_JOINT 14
+#define NUM_OF_JOINT 12
+#define NUM_OF_TOOL 2
 
 #define MASTER_SLAVE_MODE 0
 #define START_RECORDING_TRAJECTORY_MODE 1
@@ -37,8 +38,8 @@
 typedef struct _WaypointBuffer
 {
   std::vector<double> joint_angle;
-  double tool_position_1;
-  double tool_position_2;
+  double tool_1_position;
+  double tool_2_position;
 } WaypointBuffer;
 
 class OpenManipulatorXMasterSlave : public rclcpp::Node
@@ -83,13 +84,12 @@ class OpenManipulatorXMasterSlave : public rclcpp::Node
   ** ROS Clients
   *****************************************************************************/
   rclcpp::Client<open_manipulator_msgs::srv::SetJointPosition>::SharedPtr goal_joint_space_path_client_;
-  rclcpp::Client<open_manipulator_msgs::srv::SetJointPosition>::SharedPtr goal_tool_1_control_client_;
-  rclcpp::Client<open_manipulator_msgs::srv::SetJointPosition>::SharedPtr goal_tool_2_control_client_;
+  rclcpp::Client<open_manipulator_msgs::srv::SetJointPosition>::SharedPtr goal_tool_control_client_;
 
   void set_goal();
   bool set_joint_space_path(double path_time, std::vector<double> set_goal_joint_position = {});
-  bool set_tool_1_control(double set_goal_tool_position = -1.0);
-  bool set_tool_2_control(double set_goal_tool_position = -1.0);
+  bool set_tool_control(double set_goal_tool_position = -0.01);
+  // bool set_tool_2_control(double set_goal_tool_position = -1.0);
 
   /*****************************************************************************
   ** Others

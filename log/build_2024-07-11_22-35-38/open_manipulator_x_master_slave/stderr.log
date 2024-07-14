@@ -1,0 +1,7 @@
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp:[m[K In member function ‘[01m[Kbool OpenManipulatorXMasterSlave::set_tool_control(double)[m[K’:
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp:295:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktool_value[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  295 |   JointValue [01;35m[Ktool_value[m[K;
+      |              [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp:294:59:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kset_goal_tool_position[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  294 | bool OpenManipulatorXMasterSlave::set_tool_control([01;35m[Kdouble set_goal_tool_position[m[K){
+      |                                                    [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K

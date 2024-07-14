@@ -1,13 +1,12 @@
 ﻿// src/open_manipulator/open_manipulator_x_libs/src/open_manipulator_x.cpp
 #include "../include/open_manipulator_x_libs/open_manipulator_x.hpp"
-
+#include "rclcpp/rclcpp.hpp"
 OpenManipulatorX::OpenManipulatorX() {}
 
 OpenManipulatorX::~OpenManipulatorX()
 {
   delete kinematics_;
-  delete actuator_1;
-  delete actuator_2;
+  delete actuator_;
   delete tool_1;
   delete tool_2;
   for(uint8_t index = 0; index < CUSTOM_TRAJECTORY_SIZE; index++)
@@ -127,8 +126,8 @@ void OpenManipulatorX::init_open_manipulator_x(bool sim, STRING usb_port, STRING
           math::vector3(0.126, 0.0, 0.0),                 // relative position
           math::convertRPYToRotationMatrix(0.0, 0.0, 0.0), // relative orientation
           dxl_id[6],         // actuator id
-          0.010,      // max gripper limit (0.01 m)
-          -0.010,     // min gripper limit (-0.01 m)
+          0.070,      // max gripper limit (0.01 m)
+          -0.070,     // min gripper limit (-0.01 m)
           -0.015,     // Change unit from `meter` to `radian`
           3.2218127e-02 * 2,                                                    // mass
           math::inertiaMatrix(9.5568826e-06, 2.8424644e-06, -3.2829197e-10,
@@ -137,10 +136,13 @@ void OpenManipulatorX::init_open_manipulator_x(bool sim, STRING usb_port, STRING
           math::vector3(0.028 + 8.3720668e-03, 0.0246, -4.2836895e-07)          // COM
           );
   //=============================================================================================
+  // Left Arm
+  // addWorld("world02",   // world name
+  //         "joint011"); // child name
 
   // Right Arm
   addJoint("joint11",  // my name
-           "world02",   // parent name
+           "world01",   // parent name
            "joint12",  // child name
             math::vector3(0.012, 0.0, -0.188),                // relative position
             math::convertRPYToRotationMatrix(3.14, 0.0, 0.0), // relative orientation
@@ -242,8 +244,8 @@ void OpenManipulatorX::init_open_manipulator_x(bool sim, STRING usb_port, STRING
           math::vector3(0.126, 0.0, 0.0),                 // relative position
           math::convertRPYToRotationMatrix(0.0, 0.0, 0.0), // relative orientation
           dxl_id[13],         // actuator id
-          0.010,      // max gripper limit (0.01 m)
-          -0.010,     // min gripper limit (-0.01 m)
+          0.070,      // max gripper limit (0.01 m)
+          -0.070,     // min gripper limit (-0.01 m)
           -0.015,     // Change unit from `meter` to `radian`
           3.2218127e-02 * 2,                                                    // mass
           math::inertiaMatrix(9.5568826e-06, 2.8424644e-06, -3.2829197e-10,
@@ -258,100 +260,92 @@ void OpenManipulatorX::init_open_manipulator_x(bool sim, STRING usb_port, STRING
   kinematics_ = new kinematics::SolverCustomizedforOMChain();
 //  kinematics_ = new kinematics::SolverUsingCRAndSRPositionOnlyJacobian();
   addKinematics(kinematics_);
+  printf("addKinematics complete \n");
 
   if(!sim)
   {
     /*****************************************************************************
     ** Initialize Joint Actuator
     *****************************************************************************/
-    // actuator_ = new dynamixel::JointDynamixel();
-    // actuator_ = new dynamixel::JointDynamixelProfileControl(control_loop_time);
-    
-    // May 9 by Hojin
-    actuator_1 = new dynamixel::JointDynamixelProfileControl(control_loop_time);
-    actuator_2 = new dynamixel::JointDynamixelProfileControl(control_loop_time);
+    actuator_ = new dynamixel::JointDynamixelProfileControl(control_loop_time);
     
     // Set communication arguments
     STRING dxl_comm_arg[2] = {usb_port, baud_rate};
     void *p_dxl_comm_arg = &dxl_comm_arg;
 
-    // May 9 by Hojin
     // Set joint actuator id
     std::vector<uint8_t> jointDxlId;
+
     jointDxlId.push_back(dxl_id[0]);
     jointDxlId.push_back(dxl_id[1]);
     jointDxlId.push_back(dxl_id[2]);
     jointDxlId.push_back(dxl_id[3]);
     jointDxlId.push_back(dxl_id[4]);
     jointDxlId.push_back(dxl_id[5]);
+    // jointDxlId.push_back(dxl_id[6]);
     jointDxlId.push_back(dxl_id[7]);
     jointDxlId.push_back(dxl_id[8]);
     jointDxlId.push_back(dxl_id[9]);
     jointDxlId.push_back(dxl_id[10]);
     jointDxlId.push_back(dxl_id[11]);
     jointDxlId.push_back(dxl_id[12]);
-    addJointActuator(JOINT_DYNAMIXEL, actuator_1, jointDxlId, p_dxl_comm_arg);
-    addJointActuator(JOINT_DYNAMIXEL, actuator_2, jointDxlId, p_dxl_comm_arg);
-
+    // jointDxlId.push_back(dxl_id[13]);
+    addJointActuator(JOINT_DYNAMIXEL, actuator_, jointDxlId, p_dxl_comm_arg);
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "initialize joint actuator : 2"); 
     // Set joint actuator control mode
     STRING joint_dxl_mode_arg = "position_mode";
     void *p_joint_dxl_mode_arg = &joint_dxl_mode_arg;
     setJointActuatorMode(JOINT_DYNAMIXEL, jointDxlId, p_joint_dxl_mode_arg);
-
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "initialize joint actuator : 3"); 
     /*****************************************************************************
     ** Initialize Tool Actuator
     *****************************************************************************/
-    // May 9 by Hojin
     tool_1 = new dynamixel::GripperDynamixel();
     tool_2 = new dynamixel::GripperDynamixel();
-
-    uint8_t gripper1DxlId = dxl_id[6];
-    addToolActuator(TOOL_DYNAMIXEL1, tool_1, gripper1DxlId, p_dxl_comm_arg);
-
-    // Set gripper actuator control mode
-    STRING gripper_dxl_mode_arg1 = "current_based_position_mode";
-    void *p_gripper_dxl_mode_arg1 = &gripper_dxl_mode_arg1;
-    setToolActuatorMode(TOOL_DYNAMIXEL1, p_gripper_dxl_mode_arg1);
-
-    // Set gripper actuator parameter
-    STRING gripper_dxl_opt_arg1[2];
-    void *p_gripper_dxl_opt_arg1 = &gripper_dxl_opt_arg1;
-    gripper_dxl_opt_arg1[0] = "Profile_Acceleration";
-    gripper_dxl_opt_arg1[1] = "20";
-    setToolActuatorMode(TOOL_DYNAMIXEL1, p_gripper_dxl_opt_arg1);
-
-    gripper_dxl_opt_arg1[0] = "Profile_Velocity";
-    gripper_dxl_opt_arg1[1] = "200";
-    setToolActuatorMode(TOOL_DYNAMIXEL1, p_gripper_dxl_opt_arg1);
-
-    uint8_t gripper2DxlId = dxl_id[13];
-    addToolActuator(TOOL_DYNAMIXEL2, tool_2, gripper2DxlId, p_dxl_comm_arg);
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "initialize tool actuator : 1"); 
+    uint8_t gripperDxlId1 = dxl_id[6];
+    uint8_t gripperDxlId2 = dxl_id[13];
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "ID :%d, %d", dxl_id[6], dxl_id[13]); 
+    addToolActuator(TOOL_DYNAMIXEL1, tool_1, gripperDxlId1, p_dxl_comm_arg);
+    addToolActuator(TOOL_DYNAMIXEL2, tool_2, gripperDxlId2, p_dxl_comm_arg);
 
     // Set gripper actuator control mode
-    STRING gripper_dxl_mode_arg2 = "current_based_position_mode";
-    void *p_gripper_dxl_mode_arg2 = &gripper_dxl_mode_arg2;
-    setToolActuatorMode(TOOL_DYNAMIXEL2, p_gripper_dxl_mode_arg2);
+    STRING gripper_dxl_mode_arg = "current_based_position_mode";
+    void *p_gripper_dxl_mode_arg = &gripper_dxl_mode_arg;
+    setToolActuatorMode(TOOL_DYNAMIXEL1, p_gripper_dxl_mode_arg);
+    setToolActuatorMode(TOOL_DYNAMIXEL2, p_gripper_dxl_mode_arg);
 
     // Set gripper actuator parameter
-    STRING gripper_dxl_opt_arg2[2];
-    void *p_gripper_dxl_opt_arg2 = &gripper_dxl_opt_arg2;
-    gripper_dxl_opt_arg2[0] = "Profile_Acceleration";
-    gripper_dxl_opt_arg2[1] = "20";
-    setToolActuatorMode(TOOL_DYNAMIXEL2, p_gripper_dxl_opt_arg2);
+    STRING gripper_dxl_opt_arg[2];
+    void *p_gripper_dxl_opt_arg = &gripper_dxl_opt_arg;
+    gripper_dxl_opt_arg[0] = "Profile_Acceleration";
+    gripper_dxl_opt_arg[1] = "20";
+    setToolActuatorMode(TOOL_DYNAMIXEL1, p_gripper_dxl_opt_arg);
+    setToolActuatorMode(TOOL_DYNAMIXEL2, p_gripper_dxl_opt_arg);
 
-    gripper_dxl_opt_arg2[0] = "Profile_Velocity";
-    gripper_dxl_opt_arg2[1] = "200";
-    setToolActuatorMode(TOOL_DYNAMIXEL2, p_gripper_dxl_opt_arg2);
-
+    gripper_dxl_opt_arg[0] = "Profile_Velocity";
+    gripper_dxl_opt_arg[1] = "200";
+    setToolActuatorMode(TOOL_DYNAMIXEL1, p_gripper_dxl_opt_arg);
+    setToolActuatorMode(TOOL_DYNAMIXEL2, p_gripper_dxl_opt_arg);
 
     // Enable All Actuators 
     enableAllActuator();
-
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "initialize tool actuator : 2"); 
     // Receive current angles from all actuators 
     receiveAllJointActuatorValue();
-    receiveAllToolActuatorValue();
-  }
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "receiveAllJointActuatorValue : complete"); 
+    auto result_vector1 = receiveAllJointActuatorValue();
+    auto result_vector2 = receiveAllToolActuatorValue();
+    for(int i = 0; i < 12; i++) {
+      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), " Joint : result vector : %f \n", result_vector1.at(i).position);
+    }
 
+    for(int i = 0; i < 2; i++) {
+      RCLCPP_INFO(rclcpp::get_logger("rclcpp")," actuator : result vector : %f \n", result_vector2.at(i).position);
+    }
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "receiveAllToolActuatorValue : complete"); 
+  }
+  printf("if sim complete \n");
   /*****************************************************************************
   ** Initialize Custom Trajectory
   *****************************************************************************/
@@ -364,6 +358,8 @@ void OpenManipulatorX::init_open_manipulator_x(bool sim, STRING usb_port, STRING
   addCustomTrajectory(CUSTOM_TRAJECTORY_CIRCLE, custom_trajectory_[1]);
   addCustomTrajectory(CUSTOM_TRAJECTORY_RHOMBUS, custom_trajectory_[2]);
   addCustomTrajectory(CUSTOM_TRAJECTORY_HEART, custom_trajectory_[3]);
+
+  printf("== complete \n");
 }
 
 void OpenManipulatorX::process_open_manipulator_x(double present_time)
@@ -371,11 +367,13 @@ void OpenManipulatorX::process_open_manipulator_x(double present_time)
   // Planning (ik)
   JointWaypoint goal_joint_value = getJointGoalValueFromTrajectory(present_time);
   JointWaypoint goal_tool_value  = getToolGoalValue();
-
   // Control (motor)
-  receiveAllJointActuatorValue();
-  receiveAllToolActuatorValue();
+  // receiveAllJointActuatorValue();
+  // receiveAllToolActuatorValue();
   if(goal_joint_value.size() != 0) sendAllJointActuatorValue(goal_joint_value);
+  // for(int i =0; i < 2; i++){
+  //   RCLCPP_INFO(rclcpp::get_logger("rclcpp"),"%f ",goal_tool_value.at(i).position);
+  // }
   if(goal_tool_value.size() != 0) sendAllToolActuatorValue(goal_tool_value);
 
   // Perception (fk)

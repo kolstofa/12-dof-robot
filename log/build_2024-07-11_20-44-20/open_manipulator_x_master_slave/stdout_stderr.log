@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target open_manipulator_x_master_slave[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.o[0m
+gmake[2]: *** [CMakeFiles/open_manipulator_x_master_slave.dir/build.make:76: CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/open_manipulator_x_master_slave.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

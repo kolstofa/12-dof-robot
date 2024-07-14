@@ -943,16 +943,9 @@ void RobotisManipulator::makeJointTrajectory(std::vector<double> goal_joint_posi
   }
 
 
-  RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "path Time = %lf\n", move_time); 
+  // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "path Time = %lf\n", move_time); 
 
   JointWaypoint present_way_point = trajectory_.getPresentJointWaypoint();
-  for(int i = 0; i < present_way_point.size(); i++) {
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "present_way_point[%zu] = %.3f\n", i, present_way_point.at(i).position); 
-  }
-  for(int i = 0; i < present_way_point.size(); i++) {
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "goal_joint_position[%zu] = %.3f\n", i, goal_joint_position.at(i));
-  }
-  RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "=======================\n");
   JointValue goal_way_point_temp;
   JointWaypoint goal_way_point;
   for (uint8_t index = 0; index < trajectory_.getManipulator()->getDOF(); index++)
@@ -967,13 +960,13 @@ void RobotisManipulator::makeJointTrajectory(std::vector<double> goal_joint_posi
 
   if(getMovingState())
   {
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "makeJointTrajectory ver1 : step 2 ");
+    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "makeJointTrajectory ver1 : step 2 ");
     moving_state_=false;
     while(!step_moving_state_);
   }
-  RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "makeJointTrajectory ver1 : step 3 ");
+  // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "makeJointTrajectory ver1 : step 3 ");
   trajectory_.makeJointTrajectory(present_way_point, goal_way_point);
-  RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "makeJointTrajectory ver1 : step 4 ");
+  // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "makeJointTrajectory ver1 : step 4 ");
   startMoving();
 }
 

@@ -1,0 +1,18 @@
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp:[m[K In member function ‘[01m[Kbool OpenManipulatorXMasterSlave::set_joint_space_path(double, std::vector<double, std::allocator<double> >)[m[K’:
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp:207:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  207 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp:124:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpath_time[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  124 | bool OpenManipulatorXMasterSlave::set_joint_space_path([01;35m[Kdouble path_time[m[K, std::vector<double> joint_angle){
+      |                                                        [01;35m[K~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp:[m[K In member function ‘[01m[Kbool OpenManipulatorXMasterSlave::set_tool_control(double)[m[K’:
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp:305:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 2 has type ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::__cxx11::basic_string<char> >, std::__cxx11::basic_string<char> >::value_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  305 |   printf("tool of joint_name : [01;35m[K%s[m[K\n", joint_name.at(0));
+      |                                [01;35m[K~^[m[K
+      |                                 [01;35m[K|[m[K
+      |                                 [01;35m[Kchar*[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp:306:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 2 has type ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::__cxx11::basic_string<char> >, std::__cxx11::basic_string<char> >::value_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  306 |   printf("tool of joint_name : [01;35m[K%s[m[K\n", joint_name.at(1));
+      |                                [01;35m[K~^[m[K
+      |                                 [01;35m[K|[m[K
+      |                                 [01;35m[Kchar*[m[K

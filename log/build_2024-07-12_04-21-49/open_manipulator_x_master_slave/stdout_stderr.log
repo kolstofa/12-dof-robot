@@ -1,0 +1,17 @@
+[35m[1mConsolidate compiler generated dependencies of target open_manipulator_x_master_slave[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.o[0m
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp:424:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_tool_control_client_[m[K’ was not declared in this scope
+  424 |   auto future_result = [01;31m[Kgoal_tool_control_client_[m[K->async_send_request(request);
+      |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp:424:70:[m[K [01;31m[Kerror: [m[K‘[01m[Krequest[m[K’ was not declared in this scope
+  424 |   auto future_result = goal_tool_control_client_->async_send_request([01;31m[Krequest[m[K);
+      |                                                                      [01;31m[K^~~~~~~[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp:426:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+  426 |   [01;31m[Kreturn[m[K false;
+      |   [01;31m[K^~~~~~[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp:427:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  427 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/open_manipulator_x_master_slave.dir/build.make:76: CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/open_manipulator_x_master_slave.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,24 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.o[0m
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp:[m[K In member function ‘[01m[Kbool OpenManipulatorXMasterSlave::set_joint_space_path(double, std::vector<double, std::allocator<double> >)[m[K’:
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp:206:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  206 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp:124:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpath_time[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  124 | bool OpenManipulatorXMasterSlave::set_joint_space_path([01;35m[Kdouble path_time[m[K, std::vector<double> joint_angle){
+      |                                                        [01;35m[K~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp:[m[K In member function ‘[01m[Kbool OpenManipulatorXMasterSlave::set_tool_control(double)[m[K’:
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp:307:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_tool_control_client_[m[K’ was not declared in this scope; did you mean ‘[01m[Kgoal_tool_1_control_client_[m[K’?
+  307 |   while (![01;31m[Kgoal_tool_control_client_[m[K->wait_for_service(1s)) {
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |           [32m[Kgoal_tool_1_control_client_[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp:320:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_tool_position_[m[K’ was not declared in this scope; did you mean ‘[01m[Kgoal_tool_1_position_[m[K’?
+  320 |     request->joint_position.position.push_back([01;31m[Kgoal_tool_position_[m[K);
+      |                                                [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |                                                [32m[Kgoal_tool_1_position_[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator_applications/open_manipulator_x_master_slave/src/open_manipulator_x_master_slave.cpp:337:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_tool_control_client_[m[K’ was not declared in this scope; did you mean ‘[01m[Kgoal_tool_1_control_client_[m[K’?
+  337 |   auto future_result = [01;31m[Kgoal_tool_control_client_[m[K->async_send_request(request);
+      |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                        [32m[Kgoal_tool_1_control_client_[m[K
+gmake[2]: *** [CMakeFiles/open_manipulator_x_master_slave.dir/build.make:76: CMakeFiles/open_manipulator_x_master_slave.dir/src/open_manipulator_x_master_slave.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/open_manipulator_x_master_slave.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,42 @@
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_libs/src/open_manipulator_x.cpp:[m[K In member function ‘[01m[Kvoid OpenManipulatorX::init_open_manipulator_x(bool, STRING, STRING, float, std::vector<unsigned char>)[m[K’:
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_libs/src/open_manipulator_x.cpp:239:10:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KOpenManipulatorX::addTool(const char [10], const char [8], Eigen::Vector3d, Eigen::Matrix3d, Eigen::Vector3d, __gnu_cxx::__alloc_traits<std::allocator<unsigned char>, unsigned char>::value_type&, double, double, double, double, Eigen::Matrix3d, Eigen::Vector3d)[m[K’
+  239 |   [01;31m[KaddTool("gripper02",  // my name[m[K
+      |   [01;31m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  240 | [01;31m[K          "joint16",   // parent name[m[K
+      |           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  241 | [01;31m[K          math::vector3(0.126, 0.0, 0.0),                 // relative position[m[K
+      |           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  242 | [01;31m[K          math::convertRPYToRotationMatrix(0.0, 0.0, 0.0), // relative orientation[m[K
+      |           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  243 | [01;31m[K          X_AXIS,    // axis of rotation[m[K
+      |           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  244 | [01;31m[K          dxl_id[13],         // actuator id[m[K
+      |           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  245 | [01;31m[K          0.010,      // max gripper limit (0.01 m)[m[K
+      |           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  246 | [01;31m[K          -0.010,     // min gripper limit (-0.01 m)[m[K
+      |           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  247 | [01;31m[K          -0.015,     // Change unit from `meter` to `radian`[m[K
+      |           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  248 | [01;31m[K          3.2218127e-02 * 2,                                                    // mass[m[K
+      |           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  249 | [01;31m[K          math::inertiaMatrix(9.5568826e-06, 2.8424644e-06, -3.2829197e-10,[m[K
+      |           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  250 | [01;31m[K                              2.2552871e-05, -3.1463634e-10,[m[K
+      |                               [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  251 | [01;31m[K                              1.7605306e-05),                                   // inertial tensor[m[K
+      |                               [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  252 | [01;31m[K          math::vector3(0.028 + 8.3720668e-03, 0.0246, -4.2836895e-07)          // COM[m[K
+      |           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  253 | [01;31m[K          )[m[K;
+      |           [01;31m[K~[m[K
+In file included from [01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_libs/src/../include/open_manipulator_x_libs/dynamixel.hpp:24[m[K,
+                 from [01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_libs/src/../include/open_manipulator_x_libs/open_manipulator_x.hpp:20[m[K,
+                 from [01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_libs/src/open_manipulator_x.cpp:2[m[K:
+[01m[K/home/x/Desktop/workspace/12-dof-robot/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator.h:79:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid robotis_manipulator::RobotisManipulator::addTool(robotis_manipulator::Name, robotis_manipulator::Name, Eigen::Vector3d, Eigen::Matrix3d, int8_t, double, double, double, double, Eigen::Matrix3d, Eigen::Vector3d)[m[K’
+   79 |   void [01;36m[KaddTool[m[K(Name my_name,
+      |        [01;36m[K^~~~~~~[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/install/robotis_manipulator/include/robotis_manipulator/robotis_manipulator.h:79:8:[m[K [01;36m[Knote: [m[K  candidate expects 11 arguments, 12 provided
+gmake[2]: *** [CMakeFiles/open_manipulator_x_libs.dir/build.make:118: CMakeFiles/open_manipulator_x_libs.dir/src/open_manipulator_x.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/open_manipulator_x_libs.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

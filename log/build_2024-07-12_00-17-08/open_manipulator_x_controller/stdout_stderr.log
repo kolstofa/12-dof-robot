@@ -1,0 +1,97 @@
+[35m[1mConsolidate compiler generated dependencies of target open_manipulator_x_controller[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_controller.dir/src/open_manipulator_x_controller.cpp.o[0m
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:[m[K In constructor ‘[01m[Kopen_manipulator_x_controller::OpenManipulatorXController::OpenManipulatorXController(std::string, std::string)[m[K’:
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:74:58:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K{[m[K’ token
+   74 | OpenManipulatorXController::~OpenManipulatorXController()
+      |                                                          [01;31m[K^[m[K
+      |                                                          [32m[K;[m[K
+   75 | [32m[K{[m[K
+      | [32m[K~[m[K                                                         
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:83:49:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+   83 | void OpenManipulatorXController::init_parameters[01;31m[K([m[K)
+      |                                                 [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:110:48:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  110 | void OpenManipulatorXController::init_publisher[01;31m[K([m[K)
+      |                                                [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:146:49:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  146 | void OpenManipulatorXController::init_subscriber[01;31m[K([m[K)
+      |                                                 [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:154:45:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  154 | void OpenManipulatorXController::init_server[01;31m[K([m[K)
+      |                                             [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:167:68:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  167 | void OpenManipulatorXController::open_manipulator_x_option_callback[01;31m[K([m[Kconst std_msgs::msg::String::SharedPtr msg)
+      |                                                                    [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:176:64:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  176 | void OpenManipulatorXController::goal_joint_space_path_callback[01;31m[K([m[K
+      |                                                                [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:198:83:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  198 | void OpenManipulatorXController::goal_joint_space_path_to_kinematics_pose_callback[01;31m[K([m[K
+      |                                                                                   [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:220:87:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  220 | void OpenManipulatorXController::goal_joint_space_path_to_kinematics_position_callback[01;31m[K([m[K
+      |                                                                                       [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:235:90:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  235 | void OpenManipulatorXController::goal_joint_space_path_to_kinematics_orientation_callback[01;31m[K([m[K
+      |                                                                                          [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:254:63:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  254 | void OpenManipulatorXController::goal_task_space_path_callback[01;31m[K([m[K
+      |                                                               [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:275:77:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  275 | void OpenManipulatorXController::goal_task_space_path_position_only_callback[01;31m[K([m[K
+      |                                                                             [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:290:80:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  290 | void OpenManipulatorXController::goal_task_space_path_orientation_only_callback[01;31m[K([m[K
+      |                                                                                [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:307:77:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  307 | void OpenManipulatorXController::goal_joint_space_path_from_present_callback[01;31m[K([m[K
+      |                                                                             [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:324:76:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  324 | void OpenManipulatorXController::goal_task_space_path_from_present_callback[01;31m[K([m[K
+      |                                                                            [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:346:90:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  346 | void OpenManipulatorXController::goal_task_space_path_from_present_position_only_callback[01;31m[K([m[K
+      |                                                                                          [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:361:93:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  361 | void OpenManipulatorXController::goal_task_space_path_from_present_orientation_only_callback[01;31m[K([m[K
+      |                                                                                             [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:378:60:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  378 | void OpenManipulatorXController::goal_tool_control_callback[01;31m[K([m[K
+      |                                                            [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:400:61:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  400 | void OpenManipulatorXController::set_actuator_state_callback[01;31m[K([m[K
+      |                                                             [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:419:66:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  419 | void OpenManipulatorXController::goal_drawing_trajectory_callback[01;31m[K([m[K
+      |                                                                  [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:478:50:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  478 | void OpenManipulatorXController::process_callback[01;31m[K([m[K)
+      |                                                  [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:485:41:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  485 | void OpenManipulatorXController::process[01;31m[K([m[Kdouble time)
+      |                                         [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:493:50:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  493 | void OpenManipulatorXController::publish_callback[01;31m[K([m[K)
+      |                                                  [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:502:67:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  502 | void OpenManipulatorXController::publish_open_manipulator_x_states[01;31m[K([m[K)
+      |                                                                   [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:518:57:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  518 | void OpenManipulatorXController::publish_kinematics_pose[01;31m[K([m[K)
+      |                                                         [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:541:54:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  541 | void OpenManipulatorXController::publish_joint_states[01;31m[K([m[K)
+      |                                                      [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:570:56:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  570 | void OpenManipulatorXController::publish_gazebo_command[01;31m[K([m[K)
+      |                                                        [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:[m[K At global scope:
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:609:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  609 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:29:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   29 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/open_manipulator_x_controller.dir/build.make:76: CMakeFiles/open_manipulator_x_controller.dir/src/open_manipulator_x_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/open_manipulator_x_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

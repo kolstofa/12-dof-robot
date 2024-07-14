@@ -1,0 +1,15 @@
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:[m[K In constructor ‘[01m[Kopen_manipulator_x_controller::OpenManipulatorXController::OpenManipulatorXController(std::string, std::string)[m[K’:
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:70:8:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kdxl_comm_result[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   70 |    int [01;35m[Kdxl_comm_result[m[K = packetHandler->write4ByteTxRx(portHandler, 17, 116, 0.001, &dxl_error);
+      |        [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:[m[K In member function ‘[01m[Kvoid open_manipulator_x_controller::OpenManipulatorXController::init_publisher()[m[K’:
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:132:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kname[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  132 |   for (auto const & [01;35m[Kname[m[K:tools_name)
+      |                     [01;35m[K^~~~[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:[m[K In member function ‘[01m[Kvoid open_manipulator_x_controller::OpenManipulatorXController::goal_tool_control_callback(std::shared_ptr<open_manipulator_msgs::srv::SetJointPosition_Request_<std::allocator<void> > >, std::shared_ptr<open_manipulator_msgs::srv::SetJointPosition_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:367:78:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+  367 |     open_manipulator_x_.makeToolTrajectory(req->joint_position.joint_name.at([01;31m[Ki[m[K), req->joint_position.position.at(i));;
+      |                                                                              [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/open_manipulator_x_controller.dir/build.make:76: CMakeFiles/open_manipulator_x_controller.dir/src/open_manipulator_x_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/open_manipulator_x_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,20 @@
+[35m[1mConsolidate compiler generated dependencies of target open_manipulator_x_libs[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_libs.dir/src/open_manipulator_x.cpp.o[0m
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_libs/src/open_manipulator_x.cpp:[m[K In member function ‘[01m[Kvoid OpenManipulatorX::init_open_manipulator_x(bool, STRING, STRING, float, std::vector<unsigned char>)[m[K’:
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_libs/src/open_manipulator_x.cpp:336:14:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 2 has type ‘[01m[Kstd::vector<robotis_manipulator::_Point>[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  336 |     printf("[01;35m[K%d[m[K", result_vector1)
+      |             [01;35m[K~^[m[K
+      |              [01;35m[K|[m[K
+      |              [01;35m[Kint[m[K
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_libs/src/open_manipulator_x.cpp:336:33:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kfor[m[K’
+  336 |     printf("%d", result_vector1)
+      |                                 [01;31m[K^[m[K
+      |                                 [32m[K;[m[K
+  337 |     [32m[Kfor[m[K(int i = 0; i < 6; i++) {
+      |     [32m[K~~~[m[K                          
+[01m[K/home/x/Desktop/workspace/12-dof-robot/src/open_manipulator/open_manipulator_x_libs/src/open_manipulator_x.cpp:337:20:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+  337 |     for(int i = 0; [01;31m[Ki[m[K < 6; i++) {
+      |                    [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/open_manipulator_x_libs.dir/build.make:118: CMakeFiles/open_manipulator_x_libs.dir/src/open_manipulator_x.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/open_manipulator_x_libs.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

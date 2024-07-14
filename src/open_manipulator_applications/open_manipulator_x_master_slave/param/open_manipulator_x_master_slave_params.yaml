@@ -7,11 +7,11 @@
     joint04_id: 4
     joint05_id: 5
     joint06_id: 6
-    gripper01_id: 7
+    joint07_id: 7
     joint11_id: 11
     joint12_id: 12
     joint13_id: 13
     joint14_id: 14
     joint15_id: 15
     joint16_id: 16
-    gripper02_id: 17
+    joint17_id: 17

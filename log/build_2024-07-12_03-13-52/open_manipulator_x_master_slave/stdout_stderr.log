@@ -1,0 +1,25 @@
+[ 50%] [32m[1mLinking CXX executable open_manipulator_x_master_slave[0m
+[100%] Built target open_manipulator_x_master_slave
+-- Install configuration: "Debug"
+-- Execute custom install script
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_master_slave/lib/open_manipulator_x_master_slave/open_manipulator_x_master_slave
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_master_slave/share/open_manipulator_x_master_slave/launch/open_manipulator_x_master_slave.launch.py
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_master_slave/share/open_manipulator_x_master_slave/param/open_manipulator_x_master_slave_params.yaml
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_master_slave/include//open_manipulator_x_master_slave/open_manipulator_x_master_slave.hpp
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_master_slave/share/ament_index/resource_index/package_run_dependencies/open_manipulator_x_master_slave
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_master_slave/share/ament_index/resource_index/parent_prefix_path/open_manipulator_x_master_slave
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_master_slave/share/open_manipulator_x_master_slave/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_master_slave/share/open_manipulator_x_master_slave/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_master_slave/share/open_manipulator_x_master_slave/environment/path.sh
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_master_slave/share/open_manipulator_x_master_slave/environment/path.dsv
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_master_slave/share/open_manipulator_x_master_slave/local_setup.bash
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_master_slave/share/open_manipulator_x_master_slave/local_setup.sh
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_master_slave/share/open_manipulator_x_master_slave/local_setup.zsh
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_master_slave/share/open_manipulator_x_master_slave/local_setup.dsv
+-- Symlinking: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_master_slave/share/open_manipulator_x_master_slave/package.dsv
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_master_slave/share/ament_index/resource_index/packages/open_manipulator_x_master_slave
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_master_slave/share/open_manipulator_x_master_slave/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_master_slave/share/open_manipulator_x_master_slave/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_master_slave/share/open_manipulator_x_master_slave/cmake/open_manipulator_x_master_slaveConfig.cmake
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_master_slave/share/open_manipulator_x_master_slave/cmake/open_manipulator_x_master_slaveConfig-version.cmake
+-- Up-to-date symlink: /home/x/Desktop/workspace/12-dof-robot/install/open_manipulator_x_master_slave/share/open_manipulator_x_master_slave/package.xml
